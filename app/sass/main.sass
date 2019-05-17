@@ -48,11 +48,15 @@ b, strong
 	font-weight: bold
 	color: #fff
 
+
 .btn-orange
 	background-color: $orange
 
 .btn-green
 	background-color: $green
+
+.h1
+	font-family: $h-font
 
 
 // Header Start
@@ -80,19 +84,21 @@ header
 					list-style: none
 					display: flex
 					justify-content: center
-					// align-items: center
 					margin: 0
 					padding: 0
 					li
 						a
 							display: block
+							height: rem(60)
 							color: $text
 							font-size: rem(14)
-							line-height: rem(16)
+							line-height: rem(60)
+							vertical-align: middle
 							font-weight: 500
-							padding: rem(5)
+							padding: 0 rem(10)
 							&:hover
 								text-decoration: none
+								background-color: rgba(0,0,0,0.1)
 
 			.header-call
 				display: flex
@@ -107,9 +113,10 @@ header
 					vertical-align: middle
 					color: #fff
 					margin-left: rem(-15)
+					padding: 0 rem(11)
 					&:hover
 						text-decoration: none
-					padding: 0 rem(11)
+						background-color: darken($orange, 10%)
 				.header-phones
 					margin-right: rem(-15)
 					font-size: rem(14)
@@ -117,18 +124,219 @@ header
 					p
 						margin: 0
 	.header-wellcome
-		height: rem(2000)
+		background: url(../img/header/bg-1.png) 50% 50% no-repeat
+		padding-top: rem(90)
+		padding-bottom: rem(60)
 		.container
 			.row
-				.one
-					height: rem(2000)
-					background-color: green
-				.two
-					height: rem(2000)
-					background-color: red
-				.three
-					height: rem(2000)
-					background-color: blue
+				.plus-box
+					.h1
+						font-size: rem(36)
+						line-height: rem(44)
+						width: rem(476)
+						margin-bottom: rem(20)
+						position: relative
+						&:after
+							content: "новинка!"
+							display: block
+							position: absolute
+							height: rem(26)
+							width: rem(104)
+							border-radius: 5px
+							background-color: $red
+							color: #fff
+							font-size: rem(14)
+							line-height: rem(26)
+							font-weight: 500
+							text-align: center
+							top: rem(-10)
+							right: rem(-15)
+					.utp-header
+						font-family: $h-font
+						font-size: rem(24)
+						line-height: rem(30)
+						font-weight: 500
+						margin-bottom: rem(28)
+						// height: 60px
+						// width: rem(500)
+					.plus-block
+						.list-header
+							font-size: rem(24)
+							line-height: rem(30)
+							font-weight: bold
+						ul
+							list-style: none
+							padding: 0
+							li
+								display: flex
+								margin-bottom: rem(25)
+								i
+									width: rem(24)
+									height: rem(24)
+									background: url(../img/header/checked.png) no-repeat 50% 50%
+									margin-right: rem(10)
+									flex: 0 0 auto
+								p
+									font-size: rem(18)
+									margin: 0
+									line-height: rem(24)
+								
+				.device-box
+					position: relative
+					.img-device
+						position: absolute
+						bottom: 0
+						width: rem(177)
+					.img-warranty
+						position: absolute
+						width: rem(73)
+						left: rem(-5)
+						top: rem(240)
+				.form-box
+					.form-header
+						width: 100%
+						border-radius: 17px
+						background-color: #FFFFFF
+						box-shadow: 0 0 30px 0 rgba(0,0,0,0.3)
+						text-align: center
+						padding: rem(30)
+						.cta
+							font-size: rem(24)
+							font-weight: bold
+							line-height: rem(32)
+							margin-bottom: rem(30)
+							span
+								color: $green
+						.price
+							list-style: none
+							padding: 0
+							margin-bottom: rem(30)
+							.price-item
+								display: flex
+								justify-content: center
+								color: #4F4444
+								font-weight: bold
+								font-size: rem(18)
+								height: rem(43)
+								line-height: rem(43)
+								margin-bottom: rem(20)
+								.new-price
+									color: $red
+									font-size: rem(24)
+									font-weight: bold
+									margin: 0 rem(10)
+									border: 1px solid $red
+									height: rem(43)
+									width: rem(126)
+									border-radius: 5px
+								.old-price
+									font-size: rem(18)
+									font-weight: 50								
+									position: relative
+									&:after
+										content: ""
+										display: block
+										width: rem(1)
+										height: rem(43)
+										background-color: $red
+										position: absolute
+										top: 0
+										left: 30%
+										transform: rotate(32deg)
+						.form-group
+							display: flex
+							flex-direction: column
+							.form-item
+								width: 100%
+								margin-bottom: rem(20)
+								height: rem(44)
+								border: 1px solid $grey
+								color: $grey
+								border-radius: 5px
+								background-color: #FFFFFF
+								padding: rem(14)
+							.header-btn
+								font-size: rem(16)
+								font-weight: bold
+								&:hover
+									background-color: darken($green, 10%)
+
+// Header End
+
+// Tips Start
+
+.tips
+	padding: rem(20)
+	background-color: #fff
+	.container
+		.row
+			justify-content: space-between
+			flex-wrap: nowrap
+			.tips-container
+				display: flex
+				flex-direction: row
+				img
+					flex: 0 0 auto
+					width: rem(64)
+					height: rem(64)
+					margin-right: rem(10)
+				p
+					font-size: rem(18)
+					font-weight: 500
+					line-height: rem(24)
+
+// Tips End
+
+// Video-plant Start
+
+.video-plant
+	.container
+		border-top: 1px solid $grey
+		border-bottom: 1px solid $grey
+		padding: rem(30) 0
+		.row
+			.video
+				.video-container
+					position: relative
+					.embed-responsive
+						border-radius: 15px
+					.plh-video
+						position: absolute
+						background: center/contain url(../img/video-plant/placeholder-video.jpg) no-repeat
+						top: 0
+						cursor: pointer
+						z-index: 10
+					.btn-video
+						position: absolute
+						width: rem(255)
+						height: rem(255)
+						background: center/contain url(../img/video-plant/play.png) no-repeat
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						cursor: pointer
+						z-index: 50
+			.text
+				padding: rem(50) rem(40) rem(40) rem(20)
+				.h2
+					font-family: $h-font
+					font-size: rem(32)
+					font-weight: bold
+					line-height: rem(46)
+					margin-bottom: rem(20)
+				.cta
+					font-family: $h-font
+					font-size: rem(24)
+					font-weight: bold
+					line-height: rem(32)
+
+// Video-plant End
+
+.specification
+	padding-top: rem(30)
+	.container
+		.row
+			.h2
 
 
 @import "media" // Always at the end
