@@ -52,6 +52,7 @@ ul
 	font-size: rem(14)
 	font-weight: bold
 	color: #fff
+	cursor: pointer
 
 
 .btn-orange
@@ -214,7 +215,6 @@ header
 							span
 								color: $green
 						.price
-							list-style: none
 							padding: 0
 							margin-bottom: rem(30)
 							.price-item
@@ -376,11 +376,11 @@ header
 							.tab
 								&.active
 									.tablink
-										background-color: rgba(0,0,0,0.1)
+										background-color: $accent
+										color: #FFFFFF
 								.tablink
 									display: block
 									font-size: rem(14)
-									font-weight: 500
 									height: rem(42)
 									width: rem(120)
 									line-height: rem(42)
@@ -392,7 +392,8 @@ header
 									text-align: center
 									&:hover
 										text-decoration: none
-										background-color: rgba(0,0,0,0.1)
+										background-color: $accent
+										color: #FFFFFF
 					.title
 						font-family: $h-font
 						font-size: rem(18)
@@ -600,14 +601,251 @@ header
 		 	.row
 		 		.video-container
 		 			margin-bottom: rem(15)
+		 			border-radius: 9px
+		 			overflow: hidden
 		 		.title
 		 			font-family: $h-font
 		 			font-size: rem(18)
 		 			font-weight: bold
 		 			line-height: rem(24)
 
-
 // Video-instructions End
+
+// Catalog Start
+
+.catalog
+	background-color: $accent
+	padding-top: rem(50)
+	padding-bottom: rem(30)
+	.container
+		.row
+			.h2
+				color: #FFFFFF
+				margin-bottom: rem(20)
+				text-align: center
+			.catalog-box
+				display: flex
+				background-color: #FFFFFF
+				box-shadow: 0 0 rem(48) 0 rgba(0,0,0,0.3)
+				border-radius: 9px
+				padding: rem(30)
+				width: 100%
+				.cat-img-container
+					.cat-img
+						display: none
+						&.active
+							display: block
+				.cat-choise
+					.cat-choise-complect
+						padding-bottom: rem(40)
+						margin-bottom: rem(30)
+						border-bottom: 2px solid #D8D8D8
+						.tabs
+							.title
+								font-family: $h-font
+								font-size: rem(24)
+								font-weight: bold
+								margin-bottom: rem(20)
+							.cat-tabs-container
+								display: flex
+								width: 100%
+								justify-content: space-between
+								margin-bottom: rem(30)
+								.cat-tab
+									&.active
+										.tablink
+											background-color: $accent
+											color: #FFFFFF
+									.tablink
+										display: block
+										font-size: rem(14)
+										height: rem(42)
+										width: rem(130)
+										line-height: rem(42)
+										border: 2px solid $accent
+										border-radius: 5px
+										background-color: #FFFFFF
+										color: #444
+										font-weight: bold
+										text-align: center
+										&:hover
+											text-decoration: none
+											background-color: $accent
+											color: #FFFFFF
+						.cat-price
+							.price
+								p
+									font-size: rem(24)
+									font-weight: bold
+								.price-item
+									display: none
+									justify-content: space-between
+									color: #4F4444
+									font-weight: bold
+									font-size: rem(18)
+									height: rem(43)
+									line-height: rem(43)
+									&.active
+										display: flex
+									.cat-price-container
+										display: flex
+										width: 100%
+										.new-price
+											color: $green
+											font-size: rem(40)
+											font-weight: bold
+											margin-right: rem(10)
+											font-weight: bold
+										.old-price
+											font-size: rem(14)
+											font-weight: 50								
+											position: relative
+											&:after
+												content: ""
+												display: block
+												width: rem(1)
+												height: rem(41)
+												background-color: $red
+												position: absolute
+												top: 0
+												left: 40%
+												transform: rotate(32deg)
+									.btn-cat
+										&:hover
+											background-color: darken($orange, 10%)
+					.catalog-title
+						font-family: $h-font
+						font-size: rem(18)
+						font-weight: bold
+						margin-bottom: rem(20)
+					.cat-choise-single
+						display: flex
+						justify-content: space-between
+						width: 100%
+						.cat-tank-container
+							.tank-title
+								font-size: rem(14)
+								font-weight: bold
+								margin-bottom: rem(10)
+							.cat-tank-tabs
+								.cat-tank-img
+									.tank-img
+										display: none
+										padding: rem(20)
+										border: 1px solid $grey
+										border-radius: 5px
+										margin-bottom: rem(10)
+										&.active
+											display: block
+										img
+											width: rem(125)
+								.cat-tank-price
+									.price-tank
+										display: none
+										&.active
+											display: block
+										.price
+											font-family: $h-font
+											font-size: rem(28)
+											font-weight: 500
+											color: $accent
+											text-align: center
+											margin-bottom: rem(10)
+											span
+												font-size: rem(14)
+												color: $grey
+										.btn-tank
+											color: $orange
+											background-color: #FFFFFF
+											border: 2px solid $orange
+											height: rem(34)
+											&:hover
+												background-color: $orange
+												color: #FFFFFF
+						.cat-tank-tab
+							display: flex
+							flex-direction: column
+							justify-content: space-between
+							padding-top: rem(33)
+							padding-bottom: rem(100)
+							.tab
+								// flex: 1 0 auto
+								&.active
+									.tablink
+										background-color: $accent
+										color: #FFFFFF
+								.tablink
+									display: block
+									font-size: rem(14)
+									height: rem(40)
+									width: rem(50)
+									line-height: rem(40)
+									border: 2px solid $accent
+									border-radius: 5px
+									background-color: #FFFFFF
+									color: $accent
+									text-align: center
+									&:hover
+										text-decoration: none
+										background-color: $accent
+										color: #FFFFFF
+						.cat-col-container
+							.col-title
+								font-size: rem(14)
+								font-weight: bold
+								margin-bottom: rem(10)
+							.col-box
+								.col-img
+									padding: rem(20)
+									border: 1px solid $grey
+									border-radius: 5px
+									margin-bottom: rem(10)
+									img
+										width: rem(125)
+								.price-col
+									.price
+										font-family: $h-font
+										font-size: rem(28)
+										font-weight: 500
+										color: $accent
+										text-align: center
+										margin-bottom: rem(10)
+										span
+											font-size: rem(14)
+											color: $grey
+									.btn-col
+										color: $orange
+										background-color: #FFFFFF
+										border: 2px solid $orange
+										height: rem(34)
+										&:hover
+											background-color: $orange
+											color: #FFFFFF
+				.cat-complect
+					border-left: 2px solid #D8D8D8
+					.title
+						font-family: $h-font
+						font-size: rem(24)
+						font-weight: bold
+					ul
+						li
+							display: flex
+							margin-bottom: rem(15)
+							align-items: center
+							i
+								width: rem(52)
+								height: rem(52)
+								margin-right: rem(10)
+								flex: 0 0 auto
+								margin-right: rem(30)
+							p
+								margin: 0
+								font-family: $h-font
+								font-weight: bold
+								font-size: rem(18)
+
+
+// Catalog End
 
 
 
