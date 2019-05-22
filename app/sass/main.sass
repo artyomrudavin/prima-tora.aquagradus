@@ -635,6 +635,9 @@ header
 						display: none
 						&.active
 							display: block
+					img
+						max-width: 95%
+						margin: 0 auto
 				.cat-choise
 					.cat-choise-complect
 						padding-bottom: rem(40)
@@ -653,10 +656,10 @@ header
 								margin-bottom: rem(30)
 								.cat-tab
 									&.active
-										.tablink
+										.cat-tablink
 											background-color: $accent
 											color: #FFFFFF
-									.tablink
+									.cat-tablink
 										display: block
 										font-size: rem(14)
 										height: rem(42)
@@ -677,7 +680,7 @@ header
 								p
 									font-size: rem(24)
 									font-weight: bold
-								.price-item
+								.cat-price-item
 									display: none
 									justify-content: space-between
 									color: #4F4444
@@ -768,13 +771,12 @@ header
 							justify-content: space-between
 							padding-top: rem(33)
 							padding-bottom: rem(100)
-							.tab
-								// flex: 1 0 auto
+							.tank-tab
 								&.active
-									.tablink
+									.tank-tablink
 										background-color: $accent
 										color: #FFFFFF
-								.tablink
+								.tank-tablink
 									display: block
 									font-size: rem(14)
 									height: rem(40)
@@ -823,26 +825,27 @@ header
 											color: #FFFFFF
 				.cat-complect
 					border-left: 2px solid #D8D8D8
+					padding-left: rem(25)
 					.title
 						font-family: $h-font
-						font-size: rem(24)
+						font-size: rem(25)
 						font-weight: bold
 					ul
 						li
 							display: flex
-							margin-bottom: rem(15)
+							margin-bottom: rem(45)
 							align-items: center
-							i
-								width: rem(52)
-								height: rem(52)
-								margin-right: rem(10)
-								flex: 0 0 auto
+							img
+								width: rem(48)
 								margin-right: rem(30)
 							p
 								margin: 0
 								font-family: $h-font
 								font-weight: bold
 								font-size: rem(18)
+								line-height: rem(22)
+
+
 
 
 // Catalog End

@@ -1,4 +1,4 @@
-// Tab Additionally
+// Tab Specification
 
 $(function() {
 
@@ -73,8 +73,6 @@ $(function() {
 			m.innerHTML = min;
 			// s.innerHTML = sec;
 
-			// console.log(days);
-
 			// следующий раз вызываем себя, когда закончится текущая секунда
 
 			setTimeout(update, millis);
@@ -87,4 +85,74 @@ $(function() {
 	updater(document.getElementById("days"),
 			document.getElementById("hours"),
 			document.getElementById("minutes"));
+});
+
+// Tab Catalog
+
+$(function() {
+
+	// Complects
+
+	$('.cat-tablink').each(function(i) {
+		$(this).attr('data-tab', 'tab'+i)
+	});
+
+	$('.cat-img').each(function(i) {
+		$(this).attr('data-tab', 'tab'+i)
+	});
+
+	$('.cat-price-item').each(function(i) {
+		$(this).attr('data-tab', 'tab'+i)
+	});
+
+	// Tanks
+
+	$('.tank-tablink').each(function(i) {
+		$(this).attr('data-tab', 'tab'+i)
+	});
+
+	$('.tank-img').each(function(i) {
+		$(this).attr('data-tab', 'tab'+i)
+	});
+
+	$('.price-tank').each(function(i) {
+		$(this).attr('data-tab', 'tab'+i)
+	});
+
+	// Complects
+
+	$('.cat-tablink').on('click', function(e) {
+
+		e.preventDefault();
+
+		var dataTab = $(this).data('tab');
+		var getWrapper = $(this).closest('.catalog');
+
+		getWrapper.find('.cat-tab').removeClass('active');
+		$(this).closest('.cat-tab').addClass('active');
+		getWrapper.find('.cat-img').removeClass('active');
+		getWrapper.find('.cat-img[data-tab='+dataTab+']').addClass('active');
+		getWrapper.find('.cat-price-item').removeClass('active');
+		getWrapper.find('.cat-price-item[data-tab='+dataTab+']').addClass('active');
+
+	});
+
+	// Tanks
+
+	$('.tank-tablink').on('click', function(e) {
+
+		e.preventDefault();
+
+		var dataTab = $(this).data('tab');
+		var getWrapper = $(this).closest('.catalog');
+
+		getWrapper.find('.tank-tab').removeClass('active');
+		$(this).closest('.tank-tab').addClass('active');
+		getWrapper.find('.tank-img').removeClass('active');
+		getWrapper.find('.tank-img[data-tab='+dataTab+']').addClass('active');
+		getWrapper.find('.price-tank').removeClass('active');
+		getWrapper.find('.price-tank[data-tab='+dataTab+']').addClass('active');
+
+	});
+
 });

@@ -45,8 +45,8 @@ $('#play, #plh').on('click', function () {
 });
 
 
-$('#pause').on('click', function () {
-    player.pauseVideo();
-});
+// $('#pause').on('click', function () {
+//     player.pauseVideo();
+// });
 
 

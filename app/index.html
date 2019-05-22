@@ -17,6 +17,7 @@
 		<!-- Custom Browsers Color Start -->
 		<meta name="theme-color" content="#fff">
 		<!-- Custom Browsers Color End -->
+		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
 	</head>
 	<body>
@@ -434,34 +435,34 @@
 									<p class="title">Выберите нужный объем бака</p>
 									<div class="cat-tabs-container">
 										<div class="cat-tab active">
-											<a href="#" class="tablink">25 литров</a>
+											<a href="#" class="cat-tablink">25 литров</a>
 										</div>
 										<div class="cat-tab">
-											<a href="#" class="tablink">35 литров</a>
+											<a href="#" class="cat-tablink">35 литров</a>
 										</div>
 										<div class="cat-tab">
-											<a href="#" class="tablink">50 литров</a>
+											<a href="#" class="cat-tablink">50 литров</a>
 										</div>
 									</div>
 								</div>
 								<div class="cat-price">
 									<ul class="price">
 										<p>Цена:</p>
-										<li class="price-item active">
+										<li class="cat-price-item active">
 											<div class="cat-price-container">
-												<span class="new-price">3 690₴</span> <span class="old-price">4 290₴ </span>
+												<span class="new-price">6 830₴</span> <span class="old-price">7 530₴ </span>
 											</div>
 											<button class="btn btn-orange btn-cat">купить аппарат</button>
 										</li>
-										<li class="price-item">
+										<li class="cat-price-item">
 											<div class="cat-price-container">
-												<span class="new-price">3 690₴</span> <span class="old-price">4 290₴ </span>
+												<span class="new-price">7 330₴</span> <span class="old-price">8 030₴ </span>
 											</div>
 											<button class="btn btn-orange btn-cat">купить аппарат</button>
 										</li>
-										<li class="price-item">
+										<li class="cat-price-item">
 											<div class="cat-price-container">
-												<span class="new-price">3 690₴</span> <span class="old-price">4 290₴ </span>
+												<span class="new-price">7 830₴</span> <span class="old-price">8 530₴ </span>
 											</div>
 											<button class="btn btn-orange btn-cat">купить аппарат</button>
 										</li>
@@ -475,51 +476,71 @@
 									<div class="cat-tank-tabs">
 										<div class="cat-tank-img">
 											<div class="tank-img active">
-												<img src="img/catalog/25l-size.png" alt="Емкость AquaGradus™ 25 литров" class="img-responsive">
+												<img src="img/catalog/25l-size.png" alt="Емкость AquaGradus™ 25 литров" class="img-responsive" data-toggle="modal" data-target="#emk25-modal">
 											</div>
 											<div class="tank-img">
-												<img src="img/catalog/35l-size.png" alt="Емкость AquaGradus™ 35 литров" class="img-responsive">
+												<img src="img/catalog/35l-size.png" alt="Емкость AquaGradus™ 35 литров" class="img-responsive" data-toggle="modal" data-target="#emk35-modal">
 											</div>
 											<div class="tank-img">
-												<img src="img/catalog/50l-size.png" alt="Емкость AquaGradus™ 50 литров" class="img-responsive">
+												<img src="img/catalog/50l-size.png" alt="Емкость AquaGradus™ 50 литров" class="img-responsive" data-toggle="modal" data-target="#emk50-modal">
+											</div>
+											<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="emk25-modal">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<img src="img/catalog/25l-size.png" alt="Емкость AquaGradus™ 25 литров" class="img-responsive modal-content">
+												</div>
+											</div>
+											<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="emk35-modal">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<img src="img/catalog/35l-size.png" alt="Емкость AquaGradus™ 35 литров" class="img-responsive modal-content">
+												</div>
+											</div>
+											<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="emk50-modal">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+													<img src="img/catalog/50l-size.png" alt="Емкость AquaGradus™ 50 литров" class="img-responsive modal-content">
+												</div>
 											</div>
 										</div>
 										<div class="cat-tank-price">
 											<div class="price-tank active">
-												<p class="price"><span>Цена:</span> 1000грн</p>
+												<p class="price"><span>Цена:</span> 2700грн</p>
 												<button class="btn btn-orange btn-tank">купить</button>
 											</div>
 											<div class="price-tank">
-												<p class="price"><span>Цена:</span> 1000грн</p>
+												<p class="price"><span>Цена:</span> 3200грн</p>
 												<button class="btn btn-orange btn-tank">купить</button>
 											</div>
 											<div class="price-tank">
-												<p class="price"><span>Цена:</span> 1000грн</p>
+												<p class="price"><span>Цена:</span> 3700грн</p>
 												<button class="btn btn-orange btn-tank">купить</button>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="cat-tank-tab">
-									<div class="tab active">
-										<a href="#" class="tablink">25 л</a>
+									<div class="tank-tab active">
+										<a href="#" class="tank-tablink">25 л</a>
 									</div>
-									<div class="tab">
-										<a href="#" class="tablink">35 л</a>
+									<div class="tank-tab">
+										<a href="#" class="tank-tablink">35 л</a>
 									</div>
-									<div class="tab">
-										<a href="#" class="tablink">50 л</a>
+									<div class="tank-tab">
+										<a href="#" class="tank-tablink">50 л</a>
 									</div>
 								</div>
 								<div class="cat-col-container">
 									<p class="col-title">Колонна AquaGradus™</p>
 									<div class="col-box">
 										<div class="col-img">
-											<img src="img/catalog/col.png" alt="Колонна AquaGradus™ Прима Тора" class="img-responsive">
+											<img src="img/catalog/col.png" alt="Колонна AquaGradus™ Прима Тора" class="img-responsive" data-toggle="modal" data-target="#col-modal">
 										</div>
 										<div class="price-col">
-											<p class="price"><span>Цена:</span> 1000грн</p>
+											<p class="price"><span>Цена:</span> 4830грн</p>
 											<button class="btn btn-orange btn-col">купить</button>
+										</div>
+									</div>
+									<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="col-modal">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+											<img src="img/catalog/col.png" alt="Колонна AquaGradus™ Прима Тора" class="img-responsive modal-content">
 										</div>
 									</div>
 								</div>
@@ -529,27 +550,27 @@
 							<p class="title">Комплектация</p>
 							<ul>
 								<li>
-									<i></i>
+									<img src="../img/catalog/firefighter.png" alt="Самогонный аппарат под ключ" class="img-responsive">
 									<p>Армированный шланг ПВХ 5м</p>
 								</li>
 								<li>
-									<i></i>
+									<img src="../img/catalog/celsius.png" alt="Самогонный аппарат под ключ" class="img-responsive">
 									<p>Цифровой термометр в колонну</p>
 								</li>
 								<li>
-									<i></i>
+									<img src="../img/catalog/insurance.png" alt="Самогонный аппарат под ключ" class="img-responsive">
 									<p>Руководство пользователя</p>
 								</li>
 								<li>
-									<i></i>
+									<img src="../img/catalog/pipe.png" alt="Самогонный аппарат под ключ" class="img-responsive">
 									<p>Переходник на кран</p>
 								</li>
 								<li>
-									<i></i>
+									<img src="../img/catalog/celsius.png" alt="Самогонный аппарат под ключ" class="img-responsive">
 									<p>Цифровой термометр в бак</p>
 								</li>
 								<li>
-									<i></i>
+									<img src="../img/catalog/speedometer.png" alt="Самогонный аппарат под ключ" class="img-responsive">
 									<p>Заглушка под тэн (покупается отдельно)</p>
 								</li>
 							</ul>
