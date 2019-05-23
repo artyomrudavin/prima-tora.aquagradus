@@ -18,6 +18,8 @@
 		<meta name="theme-color" content="#fff">
 		<!-- Custom Browsers Color End -->
 		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
 	</head>
 	<body>
@@ -579,8 +581,103 @@
 				</div>
 			</div>
 		</section>
+		<section class="book">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 book-form-box">
+						<h2 class="h2">Скачайте самую полную книгу алкогольных рецептов</h2>
+						<p class="book-title">Самогоны, настойки, наливки и многое другое…</p>
+						<form method="post" class="book-form">
+							<p class="book-form-title">Введите свои данные и мы отправим книгу на почту</p>
+							<div class="book-form-group">
+								<!-- hidden -->
+								<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Книга">
+								<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+								<!-- hidden -->
+								<input type="text" class="b-form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+								<input type="tel" class="b-form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+								<button type="submit" class="btn btn-orange book-btn">скачать книгу рецептов</button>
+							</div>
+							<div class="book-police">
+								<span>Нажимая на кнопку скачать,<br>Вы соглашаетесь на обработку персональных данных и с условиями </span> <a href="#">Политики конфиденциальности</a>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-6 book-book">
+						<img src="img/book/recipies.png" alt="Книга рецептов алкогольных напитков" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="container">
+				<div class="row">
+					<h2 class="h2">Галерея</h2>
+				</div>
+				
+				<div class="tabs-gallery">
+					<div class="tab-g active">
+						<a href="#" class="gal-tablink">все фото и видео</a>
+					</div>
+					<div class="tab-g">
+						<a href="#" class="gal-tablink">производство</a>
+					</div>
+					<div class="tab-g">
+						<a href="#" class="gal-tablink">наша команда</a>
+					</div>
+					<div class="tab-g">
+						<a href="#" class="gal-tablink">полезные видео</a>
+					</div>
+				</div>
+				
+				<div class="tab-content-g">
+					<div class="tab-gallery-box active">
+						<div class="owl-carousel owl-theme">
+							<div> Your Content 1 </div>
+							<div> Your Content 2 </div>
+							<div> Your Content 3 </div>
+							<div> Your Content 4 </div>
+							<div> Your Content 5 </div>
+							<div> Your Content 6 </div>
+							<div> Your Content 7 </div>
+							<div> Your Content 8 </div>
+							<div> Your Content 9 </div>
+							<div> Your Content 10 </div>
+						</div>
+					</div>
+					<div class="tab-gallery-box">
+						<div class="owl-carousel owl-theme">
+							<div> Your Content 1 </div>
+							<div> Your Content 2 </div>
+							<div> Your Content 3 </div>
+							<div> Your Content 4 </div>
+						</div>
+					</div>
+					<div class="tab-gallery-box">
+						<div class="owl-carousel owl-theme">
+							<div> Your Content 5 </div>
+							<div> Your Content 6 </div>
+							<div> Your Content 7 </div>
+							<div> Your Content 8 </div>
+						</div>
+					</div>
+					<div class="tab-gallery-box">
+						<div class="owl-carousel owl-theme">
+							<div> Your Content 9 </div>
+							<div> Your Content 10 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<script src="js/scripts.min.js"></script>
 		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="libs/videoAPI/video.js"></script>
+		<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+		<!-- <script>
+			$(function() {
+				$(".owl-carousel").owlCarousel();
+			});
+		</script> -->
 	</body>
 </html>
