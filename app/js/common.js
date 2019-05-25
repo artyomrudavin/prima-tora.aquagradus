@@ -157,15 +157,6 @@ $(function() {
 
 });
 
-// Carusel
-
-$(function() {
-	$(".owl-carousel").owlCarousel({
-		// nav:true,
-		loop:true
-	});
-});
-
 // Tab Hallery
 
 $(function() {
@@ -204,4 +195,25 @@ $(function() {
 
 	});
 
+});
+
+// Carusel
+
+$(function() {
+	$('#car-all, #car-zavod, #car-team, #car-polza, #rev-carusel').carousel({
+		touch: true
+	})
+
+	$("#car-all, #car-zavod, #car-team, #car-polza, #rev-carusel").swipe({
+
+		swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+			if (direction == 'left') $(this).carousel('next');
+			if (direction == 'right') $(this).carousel('prev');
+
+		},
+
+		allowPageScroll: "vertical"
+
+	});
 });

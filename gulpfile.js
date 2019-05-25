@@ -47,6 +47,7 @@ gulp.task('scripts', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrapJs/bootstrap.min.js',
 		'app/libs/phonemask/phoneMask.min.js',
+		'app/libs/TouchSwipe/jquery.touchSwipe.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

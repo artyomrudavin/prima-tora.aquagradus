@@ -43,6 +43,11 @@ ul
 	padding: 0
 	margin: 0
 
+button,
+button:active,
+button:focus
+	outline: none
+
 .btn
 	display: block
 	border-radius: 5px
@@ -504,7 +509,7 @@ header
 // Akciya Start
 
 .akciya
-	patting-top: rem(60)
+	padding-top: rem(60)
 	.container
 		.akciya-box
 			background-color: #FFFFFF
@@ -896,26 +901,146 @@ header
 				display: flex
 				align-items: flex-end
 
-
-
-
 // Book End
 
 // Galery Start
 
 .gallery
+	padding-top: rem(30)
+	padding-bottom: rem(40)
+	background-color: #FAFDFF
 	.container
 		.row
+			.h2
+				margin-bottom: rem(30)
+				width: 100%
+				text-align: center
+		.tabs-gallery
+			display: flex
+			width: 100%
+			justify-content: center
+			margin-bottom: rem(20)
+			.tab-g
+				margin: 0 rem(9)
+				.gal-tablink
+					display: block
+					background-color: #FFFFFF
+					border: 1px solid $accent
+					border-radius: 5px
+					width: rem(155)
+					height: rem(36)
+					color: $accent
+					font-size: rem(14)
+					line-height: rem(36)
+					text-align: center
+					&:hover
+						text-decoration: none
+						color: #FFFFFF
+						background-color: $accent
+				&.active
+					.gal-tablink
+						background-color: $accent
+						color: #FFFFFF
 		.tab-content-g
 			.tab-gallery-box
 				display: none
+				.carousel
+					.carousel-inner
+						margin-bottom: rem(30)
+						.carousel-item
+							.row
+								.one-column
+									display: flex
+									justify-content: space-between
+									img
+										transition: all .8s ease-out
+										&:hover
+											transform: scale(1.1)
+									.fl-box
+										display: flex
+										flex-direction: column
+										justify-content: space-between
+									
+								.second-column
+									display: flex
+									flex-wrap: wrap
+									justify-content: space-between
+									img
+										transition: all .8s ease-out
+										&:hover
+											transform: scale(1.1)
+									.one
+										align-self: flex-start
+									.two
+										align-self: flex-end
+									.three
+										align-self: flex-end
+					.carousel-indicators
+						position: initial
+						li
+							position: relative
+							width: rem(40)
+							height: rem(9)
+							margin: 0 rem(3)
+							background-color: #fff
+							border: 1px solid $accent
+							border-radius: 5px
+							&.active
+								background-color: $accent
 				&.active
 					display: block
-
-
 // Galery End
 
+// Review Start
 
+.review
+	padding: rem(60) 0
+	.container
+		.row
+			.h2
+				text-align: center
+				margin-bottom: rem(30)
+			.carousel
+				.carousel-inner
+					margin-bottom: rem(30)
+					.carousel-item
+						.row
+							.rev-video
+								.rev-video-container
+									position: relative
+									.rev-video-caption
+										position: absolute
+										width: 100%
+										bottom: 0
+										padding: rem(10)
+										background-color: rgba(255,255,255,.7)
+										.caption-t
+											font-size: rem(14)
+											line-height: rem(16)
+											margin: 0
+							.rev-photo
+								display: flex
+								.rev-photo-img
+								.rev-photo-caption
+				.carousel-control
+					display: flex
+					justify-content: center
+					.carousel-control-prev,
+					.carousel-control-next
+						margin: 0 rem(20)
+						width: rem(50)
+						height: rem(50)
+						opacity: 1
+						position: initial
+						background: url(../img/review/arrow-inactive.png) no-repeat
+						background-size: contain
+						&:hover
+							background: url(../img/review/arrow-active.png) no-repeat
+							background-size: contain
+					.carousel-control-next
+						transform: rotate(180deg)
+
+// Review End
 
 
 
