@@ -39,7 +39,7 @@
 						</ul>
 					</nav>
 					<div class="col-md-3 header-call">
-						<a href="#" class="btn btn-orange">заказать звонок</a>
+						<a href="#" class="btn btn-orange" data-toggle="modal" data-target="#header-call">заказать звонок</a>
 						<div class="header-phones">
 							<p>+38 (050) 394-25-81</p>
 							<p>+38 (067) 261-16-48</p>
@@ -52,17 +52,17 @@
 					<div class="row">
 						<div class="col-md-5 plus-box">
 							<h1 class="h1">Самогонный аппарат AquaGradus Прима Тора</h1>
-							<p class="utp-header">Получайте до 7 литров беспохмельных напитков на своей кухне всего за 1 час</p>
+							<p class="utp-header">Экономьте время, деньги и здоровье с помощью домашнего алкоголя</p>
 							<div class="plus-block">
 								<p class="list-header">Преимущества:</p>
 								<ul>
 									<li>
 										<i></i>
-										<p>Холодильник димрота, более мощный</p>
+										<p>Мощный холодильник Димрота</p>
 									</li>
 									<li>
 										<i></i>
-										<p>Легок в управлении</p>
+										<p>Легок в управлении, справится новичок</p>
 									</li>
 									<li>
 										<i></i>
@@ -70,7 +70,7 @@
 									</li>
 									<li>
 										<i></i>
-										<p>Ректификация (96 градусов) в разы дешевле</p>
+										<p>Ректификация (96 градусов) без дооборудования</p>
 									</li>
 									<li>
 										<i></i>
@@ -90,13 +90,13 @@
 								</p>
 								<ul class="price">
 									<li class="price-item">
-										25л <span class="new-price"> 5 950 грн</span> <span class="old-price"> 5 950 грн</span>
+										25л <span class="new-price"> 6 830 грн</span> <span class="old-price"> 7 530 грн</span>
 									</li>
 									<li class="price-item">
-										35л <span class="new-price"> 5 950 грн</span> <span class="old-price"> 5 950 грн</span>
+										35л <span class="new-price"> 7 330 грн</span> <span class="old-price"> 8 030 грн</span>
 									</li>
 									<li class="price-item">
-										50л <span class="new-price"> 5 950 грн</span> <span class="old-price"> 5 950 грн</span>
+										50л <span class="new-price"> 7 830 грн</span> <span class="old-price"> 8 530 грн</span>
 									</li>
 								</ul>
 								<div class="form-group">
@@ -111,6 +111,26 @@
 							</form>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="header-call">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<form method="post" class="modal-content modal-box">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+						<p class="modal-h">Заказать обратный звонок</p>
+						<p class="modal-title">Оставьте заявку и наш менеджер перезвонит Вам через 15 минут!</p>
+						<div class="form-group">
+							<!-- hidden -->
+							<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Обратный звонок">
+							<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+							<!-- hidden -->
+							<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+							<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+							<button type="submit" class="btn btn-orange modal-btn">заказать обратный звонок</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</header>
@@ -131,7 +151,7 @@
 					</div>
 					<div class="tips-container">
 						<img src="img/tips/discount.png" alt="Самогонный аппарат AquaGradus Прима Тора" class="img-responsive">
-						<p>Постпродажная поддержка</p>
+						<p>Скидки постоянным клиентам</p>
 					</div>
 				</div>
 			</div>
@@ -191,19 +211,9 @@
 							<p class="title">Детальные характеристики:</p>
 							<ul>
 								<li>
-									<div class="label">Марка стали</div>
-									<div class="separator"></div>
-									<div class="valey">AISI 304Ti (медицинская)</div>
-								</li>
-								<li>
 									<div class="label">Диаметр колонны</div>
 									<div class="separator"></div>
 									<div class="valey">51 мм (Фланец 91мм")</div>
-								</li>
-								<li>
-									<div class="label">Диаметр трубок охладителя</div>
-									<div class="separator"></div>
-									<div class="valey">7 шт. по 8 мм</div>
 								</li>
 								<li>
 									<div class="label">Скорость перегонки</div>
@@ -211,19 +221,29 @@
 									<div class="valey">7 л/час</div>
 								</li>
 								<li>
-									<div class="label">Монтаж охлаждения</div>
+									<div class="label">Марка стали колонны</div>
 									<div class="separator"></div>
-									<div class="valey">Муфта 1/4"</div>
+									<div class="valey">Колонна: AISI 304,<br>Емкость: AISI 430 (Ферром-ая)</div>
+								</li>
+								<li>
+									<div class="label">Наполнитель (фильтр)</div>
+									<div class="separator"></div>
+									<div class="valey">Насадка Панченкова (7 м)</div>
+								</li>
+								<li>
+									<div class="label">Охладители</div>
+									<div class="separator"></div>
+									<div class="valey">Холодильник Димрота,<br>Кожухотрубный на 7 трубок</div>
+								</li>
+								<li>
+									<div class="label">Система охлаждения</div>
+									<div class="separator"></div>
+									<div class="valey">ДеЛюкс: Быстросъемы,<br>Толстостенный шланг</div>
 								</li>
 								<li>
 									<div class="label">Емкость</div>
 									<div class="separator"></div>
-									<div class="valey">Усиленная (ребра жесткости)</div>
-								</li>
-								<li>
-									<div class="label">Наполнитель</div>
-									<div class="separator"></div>
-									<div class="valey">Насадка Панченкова (5 м)</div>
+									<div class="valey">Усиленная (Штамп, ребра жесткости)</div>
 								</li>
 								<li>
 									<div class="label">Толщина крышка / стенка / дно</div>
@@ -235,13 +255,13 @@
 									<div class="separator"></div>
 									<div class="valey">электр., газ, керамич., индукц.</div>
 								</li>
-								<li>
-									<div class="label">Вес</div>
-									<div class="separator"></div>
-									<div class="valey tab-kg active">9 кг</div>
-									<div class="valey tab-kg">11 кг</div>
-									<div class="valey tab-kg">13 кг</div>
-								</li>
+								<!-- <li>
+												<div class="label">Вес</div>
+												<div class="separator"></div>
+												<div class="valey tab-kg active">9 кг</div>
+												<div class="valey tab-kg">11 кг</div>
+												<div class="valey tab-kg">13 кг</div>
+								</li> -->
 							</ul>
 						</div>
 					</div>
@@ -386,29 +406,47 @@
 					<h2 class="h2">AquaGradus™ Видео-инструкции</h2>
 					<div class="row">
 						<div class="col-md-4">
-							<div class="video-container">
-								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RysVHwwo_Ek"></iframe>
-								</div>
+							<div class="video-container" data-toggle="modal" data-target="#obzor-instr">
+								<img src="img/video-instructions/obzor.jpg" alt="" class="img-responsive embed-responsive embed-responsive-16by9 plh-video">
+								<div class="btn-video"></div>
 							</div>
 							<p class="title">Что вы получаете при заказе? Видео- распаковка аппарата</p>
 						</div>
 						<div class="col-md-4">
-							<div class="video-container">
-								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RysVHwwo_Ek"></iframe>
-								</div>
+							<div class="video-container" data-toggle="modal" data-target="#first-instr">
+								<img src="img/video-instructions/pervaya.jpg" alt="" class="img-responsive embed-responsive embed-responsive-16by9 plh-video">
+								<div class="btn-video"></div>
 							</div>
 							<p class="title">Подготовка аппарата к работе и первая перегонка</p>
 						</div>
 						<div class="col-md-4">
-							<div class="video-container">
-								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RysVHwwo_Ek"></iframe>
-								</div>
+							<div class="video-container" data-toggle="modal" data-target="#second-instr">
+								<img src="img/video-instructions/vtoraya.jpg" alt="" class="img-responsive embed-responsive embed-responsive-16by9 plh-video">
+								<div class="btn-video"></div>
 							</div>
 							<p class="title">2я перегонка, получение высокоградусного чистейшего дистиллята без особых усилий</p>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="obzor-instr">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0MOFQ0E3xlI"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="first-instr">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0MOFQ0E3xlI"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="second-instr">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0MOFQ0E3xlI"></iframe>
 					</div>
 				</div>
 			</div>
@@ -551,7 +589,7 @@
 							<ul>
 								<li>
 									<img src="../img/catalog/firefighter.png" alt="Самогонный аппарат под ключ" class="img-responsive">
-									<p>Армированный шланг ПВХ 5м</p>
+									<p>ДеЛюкс охлаждение</p>
 								</li>
 								<li>
 									<img src="../img/catalog/celsius.png" alt="Самогонный аппарат под ключ" class="img-responsive">
@@ -563,7 +601,7 @@
 								</li>
 								<li>
 									<img src="../img/catalog/pipe.png" alt="Самогонный аппарат под ключ" class="img-responsive">
-									<p>Переходник на кран</p>
+									<p>Полнопроходной нержавеющий кран</p>
 								</li>
 								<li>
 									<img src="../img/catalog/celsius.png" alt="Самогонный аппарат под ключ" class="img-responsive">
@@ -571,7 +609,7 @@
 								</li>
 								<li>
 									<img src="../img/catalog/speedometer.png" alt="Самогонный аппарат под ключ" class="img-responsive">
-									<p>Заглушка под тэн (покупается отдельно)</p>
+									<p>Клапан безопасности</p>
 								</li>
 							</ul>
 						</div>
@@ -586,7 +624,7 @@
 						<h2 class="h2">Скачайте самую полную книгу алкогольных рецептов</h2>
 						<p class="book-title">Самогоны, настойки, наливки и многое другое…</p>
 						<form method="post" class="book-form">
-							<p class="book-form-title">Введите свои данные и мы отправим книгу на почту</p>
+							<p class="book-form-title">Введите свои данные и мы отправим Вам электронную книгу</p>
 							<div class="book-form-group">
 								<!-- hidden -->
 								<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Книга">
@@ -597,7 +635,7 @@
 								<button type="submit" class="btn btn-orange book-btn">скачать книгу рецептов</button>
 							</div>
 							<div class="book-police">
-								<span>Нажимая на кнопку скачать,<br>Вы соглашаетесь на обработку персональных данных и с условиями </span> <a href="#">Политики конфиденциальности</a>
+								<span>Нажимая на кнопку скачать,<br>Вы соглашаетесь на обработку персональных данных и с условиями </span> <a href="/politika-konfidencialnosti" target="_blank">Политики конфиденциальности</a>
 							</div>
 						</form>
 					</div>
@@ -689,54 +727,54 @@
 							</ol>
 						</div>
 					</div>
-					<div class="tab-gallery-box">
+					<div class="tab-gallery-box plant">
 						<div id="car-zavod" class="carousel slide">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<div class="row">
 										<div class="col-md-6 one-column">
-											<img src="img/gallery/retro-sm-1.jpg" alt="" class="img-responsive">
+											<img src="img/gallery/plant/g-svar-m-sm.jpg" alt="" class="img-responsive" data-toggle="modal" data-target="#g-svar-m">
 											<div class="fl-box">
-												<img src="img/gallery/retro-sm-2.jpg" alt="" class="img-responsive">
-												<img src="img/gallery/retro-sm-3.jpg" alt="" class="img-responsive">
+												<img src="img/gallery/plant/g-gibka-m-sm.jpg" alt="" class="img-responsive" data-toggle="modal" data-target="#g-gibka-m">
+												<img src="img/gallery/plant/g-polir-m-sm.jpg" alt="" class="img-responsive" data-toggle="modal" data-target="#g-polir-m">
 											</div>
 										</div>
 										<div class="col-md-6 second-column">
-											<img src="img/gallery/retro-sm-6.jpg" alt="" class="img-responsive one">
-											<img src="img/gallery/retro-sm-4.jpg" alt="" class="img-responsive two">
-											<img src="img/gallery/retro-sm-5.jpg" alt="" class="img-responsive three">
+											<img src="img/gallery/plant/g-plant-m-sm.jpg" alt="" class="img-responsive one" data-toggle="modal" data-target="#g-plant-m">
+											<img src="img/gallery/plant/g-lazer-m-sm.jpg" alt="" class="img-responsive two" data-toggle="modal" data-target="#g-lazer-m">
+											<img src="img/gallery/plant/g-katka-m-sm.jpg" alt="" class="img-responsive three" data-toggle="modal" data-target="#g-katka-m">
 										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
 									<div class="row">
 										<div class="col-md-6 one-column">
-											<img src="img/gallery/retro-sm-1.jpg" alt="" class="img-responsive">
+											<img src="img/gallery/plant/g-svar-m-sm.jpg" alt="" class="img-responsive" data-toggle="modal" data-target="#g-svar-m">
 											<div class="fl-box">
-												<img src="img/gallery/retro-sm-2.jpg" alt="" class="img-responsive">
-												<img src="img/gallery/retro-sm-3.jpg" alt="" class="img-responsive">
+												<img src="img/gallery/plant/g-gibka-m-sm.jpg" alt="" class="img-responsive" data-toggle="modal" data-target="#g-gibka-m">
+												<img src="img/gallery/plant/g-polir-m-sm.jpg" alt="" class="img-responsive" data-toggle="modal" data-target="#g-polir-m">
 											</div>
 										</div>
 										<div class="col-md-6 second-column">
-											<img src="img/gallery/retro-sm-6.jpg" alt="" class="img-responsive one">
-											<img src="img/gallery/retro-sm-4.jpg" alt="" class="img-responsive two">
-											<img src="img/gallery/retro-sm-5.jpg" alt="" class="img-responsive three">
+											<img src="img/gallery/plant/g-plant-m-sm.jpg" alt="" class="img-responsive one" data-toggle="modal" data-target="#g-plant-m">
+											<img src="img/gallery/plant/g-lazer-m-sm.jpg" alt="" class="img-responsive two" data-toggle="modal" data-target="#g-lazer-m">
+											<img src="img/gallery/plant/g-katka-m-sm.jpg" alt="" class="img-responsive three" data-toggle="modal" data-target="#g-katka-m">
 										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
 									<div class="row">
 										<div class="col-md-6 one-column">
-											<img src="img/gallery/retro-sm-1.jpg" alt="" class="img-responsive">
+											<img src="img/gallery/plant/g-svar-m-sm.jpg" alt="" class="img-responsive" data-toggle="modal" data-target="#g-svar-m">
 											<div class="fl-box">
-												<img src="img/gallery/retro-sm-2.jpg" alt="" class="img-responsive">
-												<img src="img/gallery/retro-sm-3.jpg" alt="" class="img-responsive">
+												<img src="img/gallery/plant/g-gibka-m-sm.jpg" alt="" class="img-responsive" data-toggle="modal" data-target="#g-gibka-m">
+												<img src="img/gallery/plant/g-polir-m-sm.jpg" alt="" class="img-responsive" data-toggle="modal" data-target="#g-polir-m">
 											</div>
 										</div>
 										<div class="col-md-6 second-column">
-											<img src="img/gallery/retro-sm-6.jpg" alt="" class="img-responsive one">
-											<img src="img/gallery/retro-sm-4.jpg" alt="" class="img-responsive two">
-											<img src="img/gallery/retro-sm-5.jpg" alt="" class="img-responsive three">
+											<img src="img/gallery/plant/g-plant-m-sm.jpg" alt="" class="img-responsive one" data-toggle="modal" data-target="#g-plant-m">
+											<img src="img/gallery/plant/g-lazer-m-sm.jpg" alt="" class="img-responsive two" data-toggle="modal" data-target="#g-lazer-m">
+											<img src="img/gallery/plant/g-katka-m-sm.jpg" alt="" class="img-responsive three" data-toggle="modal" data-target="#g-katka-m">
 										</div>
 									</div>
 								</div>
@@ -868,11 +906,36 @@
 					</div>
 				</div>
 			</div>
-			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="retro-sm-1">
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="g-plant-m">
 				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RysVHwwo_Ek"></iframe>
+					<div class="modal-content embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J4hHh8Qp55M"></iframe>
 					</div>
+				</div>
+			</div>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="g-svar-m">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<img src="img/gallery/plant/g-svar-m-big.jpg" alt="" class="img-responsive modal-content">
+				</div>
+			</div>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="g-gibka-m">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<img src="img/gallery/plant/g-gibka-m-big.jpg" alt="" class="img-responsive modal-content">
+				</div>
+			</div>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="g-polir-m">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<img src="img/gallery/plant/g-polir-m-big.jpg" alt="" class="img-responsive modal-content">
+				</div>
+			</div>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="g-lazer-m">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<img src="img/gallery/plant/g-lazer-m-big.jpg" alt="" class="img-responsive modal-content">
+				</div>
+			</div>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="g-katka-m">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<img src="img/gallery/plant/g-katka-m-big.jpg" alt="" class="img-responsive modal-content">
 				</div>
 			</div>
 		</section>
@@ -896,10 +959,20 @@
 									</div>
 									<div class="col-md-6 rev-photo">
 										<div class="col-md-4 rev-photo-img">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eum fugit libero necessitatibus dolorem esse ducimus! Labore illum excepturi, repellendus explicabo nulla aliquam esse, dicta modi, a accusantium quae pariatur.
 										</div>
 										<div class="col-md-8 rev-photo-caption">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur architecto quod inventore molestias. Laudantium voluptatum, voluptates sit quos delectus perferendis nobis veritatis modi magni veniam qui perspiciatis! Quae, praesentium repellat.
+											<p class="rev-name">Федя, г.Харьков
+												<span class="rev-date">05.04.2019</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Работа магазина понравилась, интересоваться начал оборудованием с год назад. После первого звонка консультанты не давали мне пропасть, и это в плюс! Взял аппарат Де Люкс с 50л кубом. Доволен очень, друзья еще больше!!! Получаемый продукт ожидания превзошел, бочка под вторую заливку ждет бурбон! Сайт понятен и ясен, ориентироваться удобно. Пора обзаводиться форумом!
+											</p>
 										</div>
 									</div>
 								</div>
@@ -917,8 +990,54 @@
 										</div>
 									</div>
 									<div class="col-md-6 rev-photo">
-										Picture
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim, at accusamus molestias maxime fuga minima rem necessitatibus itaque quas sint architecto eligendi. Assumenda aperiam reprehenderit nostrum cum. Id, amet.
+										<div class="col-md-4 rev-photo-img">
+										</div>
+										<div class="col-md-8 rev-photo-caption">
+											<p class="rev-name">Пашка, г.Харьков
+												<span class="rev-date">05.04.2019</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Работа магазина понравилась, интересоваться начал оборудованием с год назад. После первого звонка консультанты не давали мне пропасть, и это в плюс! Взял аппарат Де Люкс с 50л кубом. Доволен очень, друзья еще больше!!! Получаемый продукт ожидания превзошел, бочка под вторую заливку ждет бурбон! Сайт понятен и ясен, ориентироваться удобно. Пора обзаводиться форумом!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-md-6 rev-video">
+										<div class="rev-video-container">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6rezXEnAsyU"></iframe>
+											</div>
+											<div class="rev-video-caption">
+												<p class="caption-t"><strong>Видео-отзыв Андрея, Харьков</strong><br>Первый опыт перегонки самогона на аппарате AquaGradus</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 rev-photo">
+										<div class="col-md-4 rev-photo-img">
+										</div>
+										<div class="col-md-8 rev-photo-caption">
+											<p class="rev-name">Толик, г.Харьков
+												<span class="rev-date">05.04.2019</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Работа магазина понравилась, интересоваться начал оборудованием с год назад. После первого звонка консультанты не давали мне пропасть, и это в плюс! Взял аппарат Де Люкс с 50л кубом. Доволен очень, друзья еще больше!!! Получаемый продукт ожидания превзошел, бочка под вторую заливку ждет бурбон! Сайт понятен и ясен, ориентироваться удобно. Пора обзаводиться форумом!
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -931,8 +1050,312 @@
 				</div>
 			</div>
 		</section>
-		<script src="js/scripts.min.js"></script>
-		<script src="https://www.youtube.com/iframe_api"></script>
-		<script src="libs/videoAPI/video.js"></script>
-	</body>
+		<section class="adds">
+			<div class="container">
+				<div class="row">
+					<h2 class="h2">Хочешь открыть поле для творчества, получать<br>любимые напитки на одном аппарате?</h2>
+					<p class="title">Закажи дополнительное оборудование!</p>
+					<div class="adds-line">
+						<div class="col-md-3 adds-box">
+							<img src="img/adds/deflegmator.png" alt="" class="img-responsive adds-img">
+							<p class="adds-name">Дефлегматор AquaGradus</p>
+							<div class="adds-text">Для эксперементов, перегонка: густых зерновых браг, фруктовых ароматных браг.</div>
+							<div class="adds-prise">
+								<p class="price"><span>Цена: </span>1000грн</p>
+							</div>
+							<button class="btn btn-orange adds-btn">купить</button>
+						</div>
+						<div class="col-md-3 adds-box">
+							<img src="img/adds/deflegmator.png" alt="" class="img-responsive adds-img">
+							<p class="adds-name">Дефлегматор AquaGradus</p>
+							<div class="adds-text">Для эксперементов, перегонка: густых зерновых браг, фруктовых ароматных браг.</div>
+							<div class="adds-prise">
+								<p class="price"><span>Цена: </span>1000грн</p>
+							</div>
+							<button class="btn btn-orange adds-btn">купить</button>
+						</div>
+						<div class="col-md-3 adds-box">
+							<img src="img/adds/deflegmator.png" alt="" class="img-responsive adds-img">
+							<p class="adds-name">Дефлегматор AquaGradus</p>
+							<div class="adds-text">Для эксперементов, перегонка: густых зерновых браг, фруктовых ароматных браг.</div>
+							<div class="adds-prise">
+								<p class="price"><span>Цена: </span>1000грн</p>
+							</div>
+							<button class="btn btn-orange adds-btn">купить</button>
+						</div>
+						<div class="col-md-3 adds-box">
+							<img src="img/adds/deflegmator.png" alt="" class="img-responsive adds-img">
+							<p class="adds-name">Дефлегматор AquaGradus</p>
+							<div class="adds-text">Для эксперементов, перегонка: густых зерновых браг, фруктовых ароматных браг.</div>
+							<div class="adds-prise">
+								<p class="price"><span>Цена: </span>1000грн</p>
+							</div>
+							<button class="btn btn-orange adds-btn">купить</button>
+						</div>
+					</div>
+					<div class="adds-line">
+						<div class="col-md-3 adds-box">
+							<img src="img/adds/deflegmator.png" alt="" class="img-responsive adds-img">
+							<p class="adds-name">Дефлегматор AquaGradus</p>
+							<div class="adds-text">Для эксперементов, перегонка: густых зерновых браг, фруктовых ароматных браг.</div>
+							<div class="adds-prise">
+								<p class="price"><span>Цена: </span>1000грн</p>
+							</div>
+							<button class="btn btn-orange adds-btn">купить</button>
+						</div>
+						<div class="col-md-3 adds-box">
+							<img src="img/adds/deflegmator.png" alt="" class="img-responsive adds-img">
+							<p class="adds-name">Дефлегматор AquaGradus</p>
+							<div class="adds-text">Для эксперементов, перегонка: густых зерновых браг, фруктовых ароматных браг.</div>
+							<div class="adds-prise">
+								<p class="price"><span>Цена: </span>1000грн</p>
+							</div>
+							<button class="btn btn-orange adds-btn">купить</button>
+						</div>
+						<div class="col-md-3 adds-box">
+							<img src="img/adds/deflegmator.png" alt="" class="img-responsive adds-img">
+							<p class="adds-name">Дефлегматор AquaGradus</p>
+							<div class="adds-text">Для эксперементов, перегонка: густых зерновых браг, фруктовых ароматных браг.</div>
+							<div class="adds-prise">
+								<p class="price"><span>Цена: </span>1000грн</p>
+							</div>
+							<button class="btn btn-orange adds-btn">купить</button>
+						</div>
+						<div class="col-md-3 adds-box">
+							<img src="img/adds/deflegmator.png" alt="" class="img-responsive adds-img">
+							<p class="adds-name">Дефлегматор AquaGradus</p>
+							<div class="adds-text">Для эксперементов, перегонка: густых зерновых браг, фруктовых ароматных браг.</div>
+							<div class="adds-prise">
+								<p class="price"><span>Цена: </span>1000грн</p>
+							</div>
+							<button class="btn btn-orange adds-btn">купить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
+				<div class="row">
+					<h2 class="h2">Как мы работаем?</h2>
+					<div class="col-md-2 about-step">
+						<img src="img/about/step-1.png" alt="" class="img-responsive about-img">
+						<p class="about-title">Вы оставляете заявку на сайте или заказываете обратный звонок</p>
+					</div>
+					<div class="col-md-2 about-step">
+						<img src="img/about/step-2.png" alt="" class="img-responsive about-img">
+						<p class="about-title">Менеджер уточняет адрес и сообщит дату доставки. Передает заказ на производство</p>
+					</div>
+					<div class="col-md-2 about-step">
+						<img src="img/about/step-3.png" alt="" class="img-responsive about-img">
+						<p class="about-title">Аппарат производится, проходит проверку в отделе качества. Только после этого комплектуется и отправляется транспортной компанией</p>
+					</div>
+					<div class="col-md-2 about-step">
+						<img src="img/about/step-4.png" alt="" class="img-responsive about-img">
+						<p class="about-title">Доставка за 1 - 3 дня в одно из 2300 отделений Новой Почты по всей Украине.</p>
+					</div>
+					<div class="col-md-2 about-step">
+						<img src="img/about/step-5.png" alt="" class="img-responsive about-img">
+						<p class="about-title">При получении, тщательно проверьте посылку на наличие транспортных повреждений и целостности упаковки. Только после этого оплатите картой или наличными</p>
+					</div>
+					<div class="col-md-2 about-step">
+						<img src="img/about/step-6.png" alt="" class="img-responsive about-img">
+						<p class="about-title">Дистиллятор Прима Тора АкваГрадус™ - Домашние напитки до 93°; Гарантия 5 лет; Бесплатная консультация и поддержка клиентов!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="faq">
+			<div class="container">
+				<div class="row">
+					<h2 class="h2">Часто задаваемые вопросы</h2>
+					<div class="col-md-7 faq-accord">
+						<div class="accordeon">
+							<div class="card x-collapse">
+								<div class="card-header">
+									<p class="title">
+										<a href="#" class="x-link">Можно ли купить отдельно бак/колонну?</a>
+									</p>
+								</div>
+								<div class="collapse">
+									<div class="card-block">
+										<p>
+											Да.<br>
+											<a href="#constructor" class="link">Купить отдельно колонну</a><a href="#constructor" class="link">Купить отдельно бак</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card x-collapse">
+								<div class="card-header">
+									<p class="title">
+										<a href="#constructor" class="x-link">Есть ли магазин в моем городе? Хочу посмотреть/пощупать!</a>
+									</p>
+								</div>
+								<div class="collapse">
+									<div class="card-block">
+										<p>
+											Для того, чтобы сделать аппараты доступнее по цене, мы экономим на аренде помещений, зарплатах продавцов и прочих накладных расходах, ведущих к удорожанию товара. Отлаженная система доставки до квартиры и большое количество заказов по стране позволяет сделать доставку прямо с завода очень быстрой! Мы на 100% уверены, что прибор Вам понравится, поэтому не взимаем никакой предоплаты: заказ Вы оплачиваете, после того как он будет у Вас в руках и Вы убедитесь, что Вам все нравится. Это 100% гарантия, что Вы будете довольны прибором. Узнать о доставке в свой город вы <a href="#about" class="link">можете здесь</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card x-collapse">
+								<div class="card-header">
+									<p class="title">
+										<a href="#" class="x-link">Какая цена на аппарат 25, 35, 50 л?</a>
+									</p>
+								</div>
+								<div class="collapse">
+									<div class="card-block">
+										<p>
+											Цена на 25 л - 5950₴, 35 л - 6450₴, 50 л - 6950₴. Чтобы узнать цены на аппарат нажмите на кнопку купить.
+											<a href="#constructor" class="link link-one">Купить аппарат</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card x-collapse">
+								<div class="card-header">
+									<p class="title">
+										<a href="#" class="x-link">Что входит в комплектацию прибора?</a>
+									</p>
+								</div>
+								<div class="collapse">
+									<div class="card-block">
+										<p>
+											В комплекте: дистиллятор в сборе, Армированный шланг ПВХ 5 м для подключения, переходник 1.2" на кран, руководство по эксплуатации, гарантийный талон, упаковка для транспортировки. Аппарат готов к использованию сразу после покупки. Перед оплатой Вы имеете право вскрыть посылку и еще раз всё проверить. Дополнительные товары (царга, диоптр, попугай и т.д.) приобретаются отдельно.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card x-collapse">
+								<div class="card-header">
+									<p class="title">
+										<a href="#" class="x-link">Можно ли купить аппарат в кредит/рассрочку?</a>
+									</p>
+								</div>
+								<div class="collapse">
+									<div class="card-block">
+										<p>
+											Оформление кредита требует личной подписи и Вашего присутствия, что крайне неудобно для покупателя. Поэтому если Вы желаете купить аппарат AquaGradus™ Стандарт в кредит мы предлагаем самостоятельно оформить потребительский кредит в ближайшем к Вам банковском учреждении. На сайте оформление кредита пока, к сожалению, отсутствует.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 faq-form">
+						<form method="post" class="faq-form-container">
+							<p class="faq-title">Нет нужного ответа?</p>
+							<p class="faq-cta">Напишите нам и мы<br>
+							обязательно ответим в течение 1го дня</p>
+							<div class="form-group">
+								<!-- hidden -->
+								<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Вопрос">
+								<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+								<!-- hidden -->
+								<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+								<!-- <input type="text" class="form-item" name="DATA[COMMENTS]" required placeholder="Ваш вопрос"> -->
+								<textarea name="DATA[COMMENTS]" cols="30" rows="6" class="form-item com-item" placeholder="Ваш вопрос"></textarea>
+								<button type="submit" class="btn btn-green faq-btn">задать вопрос</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 footer-logo">
+						<img src="img/Logo/AquaGradusEng1-2.png" alt="Aquagradus Самогонные аппараты" class="img-responsive">
+					</div>
+					<div class="col-md-3 footer-contacts">
+						<p class="f-title">Контакты</p>
+						<ul class="cont-box">
+							<li class="cont-item">
+								<img src="img/footer/placeholder.png" alt="" class="img-responsive">
+								<p class="cont">г. Харьков, ул. Пушкинская 3</p>
+							</li>
+							<li class="cont-item">
+								<img src="img/footer/phone-call.png" alt="" class="img-responsive">
+								<p class="cont">+38 (050) 250-10-53</p>
+							</li>
+							<li class="cont-item">
+								<img src="img/footer/phone-call.png" alt="" class="img-responsive">
+								<p class="cont">+38(067) 261-29-81</p>
+							</li>
+							<li class="cont-item">
+								<img src="img/footer/mail.png" alt="" class="img-responsive">
+								<p class="cont">primatora.aquagradus@gmail.com</p>
+							</li>
+							<li class="cont-item">
+								<img src="img/footer/worldwide.png" alt="" class="img-responsive">
+							<a href="https://aquagradus.com/" target="_blank" class="cont">aquagradus.com</a href="#">
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 footer-time">
+					<p class="f-title">Время работы</p>
+					<ul class="cont-box">
+						<li class="cont-item">
+							<p class="cont">Пн-Вс с 9-00 до 20-00<br>Без выходных</p>
+						</li>
+						<li class="cont-item">
+							<p class="cont"></p>
+						</li>
+						<li class="cont-item">
+							<p class="cont"><a href="/politika-konfidencialnosti" target="_blank">Политика<br>конфиденциальности</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 footer-social">
+					<p class="f-title">Мы в соцсетях</p>
+					<div class="f-soc-box">
+						<div class="soc-item">
+							<img src="img/footer/facebook.png" alt="" class="img-responsive">
+						</div>
+						<div class="soc-item">
+							<img src="img/footer/vk.png" alt="" class="img-responsive">
+						</div>
+						<div class="soc-item">
+							<img src="img/footer/youtube.png" alt="" class="img-responsive">
+						</div>
+						<div class="soc-item">
+							<img src="img/footer/instagram.png" alt="" class="img-responsive">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 footer-consultation">
+					<p class="f-title">Сервис и консультация.<br>Менеджер свяжется с Вами<br>в течение 10 минут</p>
+					<button class="btn f-btn" data-toggle="modal" data-target="#footer-call">связаться с менеджером</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="footer-call">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<form method="post" class="modal-content modal-box">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+					<p class="modal-h">Заказать обратный звонок</p>
+					<p class="modal-title">Оставьте заявку и наш менеджер перезвонит Вам через 15 минут!</p>
+					<div class="form-group">
+						<!-- hidden -->
+						<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Обратный звонок">
+						<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+						<!-- hidden -->
+						<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+						<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+						<button type="submit" class="btn btn-green modal-btn">связаться с менеджером</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<script src="js/scripts.min.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script src="libs/videoAPI/video.js"></script>
+</body>
 </html>

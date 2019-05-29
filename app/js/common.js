@@ -14,9 +14,9 @@ $(function() {
 		$(this).attr('data-tab', 'tab'+i)
 	});
 
-	$('.tab-kg').each(function(i) {
-		$(this).attr('data-tab', 'tab'+i)
-	});
+	// $('.tab-kg').each(function(i) {
+	// 	$(this).attr('data-tab', 'tab'+i)
+	// });
 
 	$('.tablink').on('click', function(e) {
 
@@ -31,8 +31,8 @@ $(function() {
 		getWrapper.find('.tab-img[data-tab='+dataTab+']').addClass('active');
 		getWrapper.find('.tab-product').removeClass('active');
 		getWrapper.find('.tab-product[data-tab='+dataTab+']').addClass('active');
-		getWrapper.find('.tab-kg').removeClass('active');
-		getWrapper.find('.tab-kg[data-tab='+dataTab+']').addClass('active');
+		// getWrapper.find('.tab-kg').removeClass('active');
+		// getWrapper.find('.tab-kg[data-tab='+dataTab+']').addClass('active');
 
 	});
 
@@ -216,4 +216,36 @@ $(function() {
 		allowPageScroll: "vertical"
 
 	});
+});
+
+// Accardeon FAQ
+
+$(function() {
+
+	$('.accordeon .card>.collapse').not(':eq(1)').hide();
+	$('.accordeon .card .x-link').not(':eq(1)').addClass('collapsed');
+
+	$('.accordeon .card .x-link').on('click', function(e) {
+		e.preventDefault();
+		console.log('click');
+		
+		var findCollapse = $(this).closest('.card-header').next('.collapse');
+		console.log(findCollapse);
+
+		var findWrapper = $(this).closest('.accordeon');
+		console.log(findWrapper);
+
+		if ( findCollapse.is(':visible') ) {
+			findCollapse.slideUp();
+			findWrapper.find('.card .x-link').addClass('collapsed');
+		} else {
+			findWrapper.find('.card>.collapse').slideUp();
+			findCollapse.slideDown();
+			findWrapper.find('.card .x-link').addClass('collapsed');
+			$(this).removeClass('collapsed');
+		};
+
+		
+	});
+
 });
