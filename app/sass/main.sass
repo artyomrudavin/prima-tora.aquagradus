@@ -85,7 +85,7 @@ button:focus
 
 .modal
 	.modal-dialog
-		.modal-box
+		.modal-box, .modal-content
 			position: relative
 			background-color: #FFFFFF
 			border-radius: 5px
@@ -94,7 +94,7 @@ button:focus
 				position: absolute
 				right: 0
 				top: 0
-				background-color: #FFFFFF
+				background-color: transparent
 				padding: 0
 				border: none
 				cursor: pointer
@@ -130,6 +130,91 @@ button:focus
 					padding: rem(14)
 
 // Modal End
+
+// Modal-add Start
+
+.modal
+	.modal-dialog
+		&.modal-full
+			max-width: rem(1000)
+		.modal-content
+			background-color: #FFFFFF
+			padding: rem(30)
+			.container-fluid
+				.row
+					.m-tab-img
+						.m-tab-imgbox
+							border: 2px solid $accent
+							margin-bottom: rem(15)
+							.m-img
+								display: none
+								&.active
+									display: block
+						.m-tab-box
+							display: flex
+							justify-content: space-between
+							.m-tab-link
+								border: 2px solid $accent
+								padding: rem(10)
+								// margin-right: rem(15)
+					.m-text
+						.close
+							top: rem(-25)
+							right: rem(-25)
+						.title
+							font-family: $h-font
+							font-size: rem(24)
+							line-height: rem(32)
+							font-weight: bold
+							margin-bottom: rem(20)
+						.mark-box
+							display: flex
+							margin-bottom: rem(20)
+							.m-rev-mark
+								flex: 0 0 auto
+								margin-right: rem(10)
+							.m-rev-mark-text
+								flex: 0 0 auto
+								font-size: rem(14)
+								line-height: rem(14)
+								color: $orange
+						.m-text-about
+							font-size: rem(14)
+							line-height: rem(20)
+							p
+								margin-bottom: rem(20)
+						.m-buy-box
+							display: flex
+							align-items: center
+							margin-bottom: rem(40)
+							.price-text
+								flex: 0 0 auto
+								color: #222222
+								margin-right: rem(30)
+								font-size: rem(18)
+								font-weight: 500
+							.price
+								flex: 0 0 auto
+								color: $green
+								font-size: rem(40)
+								font-weight: bold
+								line-height: rem(47)
+								margin-right: rem(25)
+							.m-btn
+								max-width: rem(265)
+						.m-share-box
+							display: flex
+							align-items: center
+							.text-share
+								font-size: rem(14)
+								margin: 0
+								margin-right: rem(15)
+							.m-share-link
+								max-width: rem(32)
+
+
+
+// Modal-add End
 
 // Header Start
 
