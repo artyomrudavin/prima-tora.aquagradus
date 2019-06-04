@@ -30,12 +30,12 @@
 					</div>
 					<nav class="col-md-7 header-nav">
 						<ul>
-							<li><a href="#">Характеристики</a></li>
-							<li><a href="#">Продукция</a></li>
-							<li><a href="#">Галерея</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Как мы работаем?</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="#specification">Характеристики</a></li>
+							<li><a href="#catalog">Продукция</a></li>
+							<li><a href="#gallery">Галерея</a></li>
+							<li><a href="#review">Отзывы</a></li>
+							<li><a href="#about">Как мы работаем?</a></li>
+							<li><a href="#footer">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="col-md-3 header-call">
@@ -46,12 +46,43 @@
 						</div>
 					</div>
 				</div>
+				<div class="navbar-mobile">
+					<p>1111</p>
+				</div>
 			</div>
-			<div class="row header-wellcome">
+			<div class="header-wellcome">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-5 plus-box">
-							<h1 class="h1">Самогонный аппарат AquaGradus Прима Тора</h1>
+						<div class="col-md-5 form-box order-md-3">
+							<h1 class="h1-mobile">Самогонный аппарат<br>AquaGradus Прима Тора</h1>
+							<form class="form-header" method="post" id="form-header-form">
+								<p class="cta">
+									Заполните форму чтобы<br><span>получить скидку 700 грн!</span>
+								</p>
+								<ul class="price">
+									<li class="price-item">
+										25л <span class="new-price"> 6 830 грн</span> <span class="old-price"> 7 530 грн</span>
+									</li>
+									<li class="price-item">
+										35л <span class="new-price"> 7 330 грн</span> <span class="old-price"> 8 030 грн</span>
+									</li>
+									<li class="price-item">
+										50л <span class="new-price"> 7 830 грн</span> <span class="old-price"> 8 530 грн</span>
+									</li>
+								</ul>
+								<div class="form-group">
+									<!-- hidden -->
+									<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Первый экран">
+									<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+									<!-- hidden -->
+									<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+									<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+									<button type="submit" class="btn btn-green header-btn">получить скидку</button>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-5 plus-box order-md-1">
+							<h1 class="h1-desctop">Самогонный аппарат AquaGradus Прима Тора</h1>
 							<p class="utp-header">Экономьте время, деньги и здоровье с помощью домашнего алкоголя</p>
 							<div class="plus-block">
 								<p class="list-header">Преимущества:</p>
@@ -79,43 +110,16 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-2 device-box">
+						<div class="col-md-2 device-box order-md-2">
 							<img src="img/header/device.png" alt="Самогонный аппарат AquaGradus Прима Тора" class="img-responsive img-device">
 							<img src="img/header/warranty.png" alt="AquaGradus Прима Тора 5 лет гарантии" class="img-responsive img-warranty">
-						</div>
-						<div class="col-md-5 form-box">
-							<form class="form-header" method="post">
-								<p class="cta">
-									Заполните форму чтобы<br><span>получить скидку 700 грн!</span>
-								</p>
-								<ul class="price">
-									<li class="price-item">
-										25л <span class="new-price"> 6 830 грн</span> <span class="old-price"> 7 530 грн</span>
-									</li>
-									<li class="price-item">
-										35л <span class="new-price"> 7 330 грн</span> <span class="old-price"> 8 030 грн</span>
-									</li>
-									<li class="price-item">
-										50л <span class="new-price"> 7 830 грн</span> <span class="old-price"> 8 530 грн</span>
-									</li>
-								</ul>
-								<div class="form-group">
-									<!-- hidden -->
-									<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Первый экран">
-									<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
-									<!-- hidden -->
-									<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
-									<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
-									<button type="submit" class="btn btn-green header-btn">получить скидку</button>
-								</div>
-							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="header-call">
 				<div class="modal-dialog modal-dialog-centered" role="document">
-					<form method="post" class="modal-content modal-box">
+					<form method="post" class="modal-content modal-box" id="header-call-form">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 						</button>
@@ -162,10 +166,8 @@
 					<div class="col-md-8 video">
 						<div class="video-container">
 							<div class="embed-responsive embed-responsive-16by9">
-								<div id="video-placeholder"></div>
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J4hHh8Qp55M"></iframe>
 							</div>
-							<div id="plh" class="plh-video embed-responsive embed-responsive-16by9"></div>
-							<div id="play" class="btn-video"></div>
 						</div>
 					</div>
 					<div class="col-md-4 text">
@@ -175,7 +177,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="specification">
+		<section id="specification" class="specification">
 			<div class="container">
 				<div class="row">
 					<h2 class="h2">Характеристики и размеры AquaGradus™ Прима Тора</h2>
@@ -255,13 +257,6 @@
 									<div class="separator"></div>
 									<div class="valey">электр., газ, керамич., индукц.</div>
 								</li>
-								<!-- <li>
-																			<div class="label">Вес</div>
-																			<div class="separator"></div>
-																			<div class="valey tab-kg active">9 кг</div>
-																			<div class="valey tab-kg">11 кг</div>
-																			<div class="valey tab-kg">13 кг</div>
-								</li> -->
 							</ul>
 						</div>
 					</div>
@@ -388,7 +383,7 @@
 							</div>
 						</div>
 					</div>
-					<form method="post" class="col-12 akciya-form">
+					<form method="post" class="col-12 akciya-form" id="akciya-form">
 						<!-- hidden -->
 						<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Первый экран">
 						<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
@@ -451,7 +446,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="catalog">
+		<section id="catalog" class="catalog">
 			<div class="container">
 				<div class="row">
 					<h2 class="h2">Успейте заказать AquaGradus™ Прима Тора по супер цене!</h2>
@@ -490,27 +485,87 @@
 											<div class="cat-price-container">
 												<span class="new-price">6 830₴</span> <span class="old-price">7 530₴ </span>
 											</div>
-											<button class="btn btn-orange btn-cat">купить аппарат</button>
+											<button class="btn btn-orange btn-cat" data-toggle="modal" data-target="#primaTwen">купить аппарат</button>
 										</li>
 										<li class="cat-price-item">
 											<div class="cat-price-container">
 												<span class="new-price">7 330₴</span> <span class="old-price">8 030₴ </span>
 											</div>
-											<button class="btn btn-orange btn-cat">купить аппарат</button>
+											<button class="btn btn-orange btn-cat" data-toggle="modal" data-target="#primaThird">купить аппарат</button>
 										</li>
 										<li class="cat-price-item">
 											<div class="cat-price-container">
 												<span class="new-price">7 830₴</span> <span class="old-price">8 530₴ </span>
 											</div>
-											<button class="btn btn-orange btn-cat">купить аппарат</button>
+											<button class="btn btn-orange btn-cat" data-toggle="modal" data-target="#primaFift">купить аппарат</button>
 										</li>
 									</ul>
+									<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="primaTwen">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<form method="post" class="modal-content modal-box" id="primaTwen-form">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+												</button>
+												<p class="modal-h">AquaGradus Прима Тора 25 литров</p>
+												<p class="modal-title">Сумма заказа: 6 830 грн</p>
+												<div class="form-group">
+													<!-- hidden -->
+													<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Прима 25 литров">
+													<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+													<!-- hidden -->
+													<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+													<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+													<button type="submit" class="btn btn-orange modal-btn">заказать</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="primaThird">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<form method="post" class="modal-content modal-box" id="primaThird-form">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+												</button>
+												<p class="modal-h">AquaGradus Прима Тора 35 литров</p>
+												<p class="modal-title">Сумма заказа: 7 330 грн</p>
+												<div class="form-group">
+													<!-- hidden -->
+													<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Прима 35 литров">
+													<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+													<!-- hidden -->
+													<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+													<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+													<button type="submit" class="btn btn-orange modal-btn">заказать</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="primaFift">
+										<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+											<form method="post" class="modal-content modal-box" id="primaFift-form">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+												</button>
+												<p class="modal-h">AquaGradus Прима Тора 50 литров</p>
+												<p class="modal-title">Сумма заказа: 7 830 грн</p>
+												<div class="form-group">
+													<!-- hidden -->
+													<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Прима 50 литров">
+													<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+													<!-- hidden -->
+													<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+													<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+													<button type="submit" class="btn btn-orange modal-btn">заказать</button>
+												</div>
+											</form>
+										</div>
+									</div>
 								</div>
 							</div>
 							<p class="catalog-title">Вы можете приобрести отдельно:</p>
 							<div class="cat-choise-single">
 								<div class="cat-tank-container">
-									<p class="tank-title">Бак AquaGradus™</p>
+									<p class="tank-title">Бак AquaGradus</p>
 									<div class="cat-tank-tabs">
 										<div class="cat-tank-img">
 											<div class="tank-img active">
@@ -541,15 +596,15 @@
 										<div class="cat-tank-price">
 											<div class="price-tank active">
 												<p class="price"><span>Цена:</span> 2700грн</p>
-												<button class="btn btn-orange btn-tank">купить</button>
+												<button class="btn btn-orange btn-tank" data-toggle="modal" data-target="#kubTwen">купить</button>
 											</div>
 											<div class="price-tank">
 												<p class="price"><span>Цена:</span> 3200грн</p>
-												<button class="btn btn-orange btn-tank">купить</button>
+												<button class="btn btn-orange btn-tank" data-toggle="modal" data-target="#kubThird">купить</button>
 											</div>
 											<div class="price-tank">
 												<p class="price"><span>Цена:</span> 3700грн</p>
-												<button class="btn btn-orange btn-tank">купить</button>
+												<button class="btn btn-orange btn-tank" data-toggle="modal" data-target="#kubFift">купить</button>
 											</div>
 										</div>
 									</div>
@@ -566,20 +621,100 @@
 									</div>
 								</div>
 								<div class="cat-col-container">
-									<p class="col-title">Колонна AquaGradus™</p>
+									<p class="col-title">Колонна Прима Тора</p>
 									<div class="col-box">
 										<div class="col-img">
 											<img src="img/catalog/col.png" alt="Колонна AquaGradus™ Прима Тора" class="img-responsive" data-toggle="modal" data-target="#col-modal">
 										</div>
 										<div class="price-col">
 											<p class="price"><span>Цена:</span> 4830грн</p>
-											<button class="btn btn-orange btn-col">купить</button>
+											<button class="btn btn-orange btn-col" data-toggle="modal" data-target="#primaColona">купить</button>
 										</div>
 									</div>
 									<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="col-modal">
 										<div class="modal-dialog modal-dialog-centered" role="document">
 											<img src="img/catalog/col.png" alt="Колонна AquaGradus™ Прима Тора" class="img-responsive modal-content">
 										</div>
+									</div>
+								</div>
+								<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="kubTwen">
+									<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+										<form method="post" class="modal-content modal-box" id="kubTwen-form">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+											<p class="modal-h">Бак AquaGradus 25 литров</p>
+											<p class="modal-title">Сумма заказа: 2 700 грн</p>
+											<div class="form-group">
+												<!-- hidden -->
+												<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Бак 25 литров">
+												<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+												<!-- hidden -->
+												<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+												<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+												<button type="submit" class="btn btn-orange modal-btn">заказать</button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="kubThird">
+									<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+										<form method="post" class="modal-content modal-box" id="kubThird-form">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+											<p class="modal-h">Бак AquaGradus 35 литров</p>
+											<p class="modal-title">Сумма заказа: 3 200 грн</p>
+											<div class="form-group">
+												<!-- hidden -->
+												<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Бак 35 литров">
+												<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+												<!-- hidden -->
+												<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+												<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+												<button type="submit" class="btn btn-orange modal-btn">заказать</button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="kubFift">
+									<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+										<form method="post" class="modal-content modal-box" id="kubFift-form">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+											<p class="modal-h">Бак AquaGradus 50 литров</p>
+											<p class="modal-title">Сумма заказа: 3 700 грн</p>
+											<div class="form-group">
+												<!-- hidden -->
+												<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Бак 50 литров">
+												<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+												<!-- hidden -->
+												<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+												<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+												<button type="submit" class="btn btn-orange modal-btn">заказать</button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="primaColona">
+									<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+										<form method="post" class="modal-content modal-box" id="primaColona-form">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+											<p class="modal-h">Колонна AquaGradus Прима Тора</p>
+											<p class="modal-title">Сумма заказа: 4 830 грн</p>
+											<div class="form-group">
+												<!-- hidden -->
+												<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Колонна Прима">
+												<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+												<!-- hidden -->
+												<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+												<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+												<button type="submit" class="btn btn-orange modal-btn">заказать</button>
+											</div>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -623,7 +758,7 @@
 					<div class="col-md-6 book-form-box">
 						<h2 class="h2">Скачайте самую полную книгу алкогольных рецептов</h2>
 						<p class="book-title">Самогоны, настойки, наливки и многое другое…</p>
-						<form method="post" class="book-form">
+						<form method="post" class="book-form" id="book-form">
 							<p class="book-form-title">Введите свои данные и мы отправим Вам электронную книгу</p>
 							<div class="book-form-group">
 								<!-- hidden -->
@@ -645,7 +780,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="gallery">
+		<section id="gallery" class="gallery">
 			<div class="container">
 				<div class="row">
 					<h2 class="h2">Галерея</h2>
@@ -940,7 +1075,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="review">
+		<section id="review" class="review">
 			<div class="container">
 				<div class="row">
 					<h2 class="h2">Отзывы наших клиентов</h2>
@@ -954,16 +1089,16 @@
 												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6rezXEnAsyU"></iframe>
 											</div>
 											<div class="rev-video-caption">
-												<p class="caption-t"><strong>Видео-отзыв Андрея, Харьков</strong><br>Первый опыт перегонки самогона на аппарате AquaGradus</p>
+												<p class="caption-t"><strong>Видео-отзыв Илья Федуков</strong><br>Самогонный аппарат AquaGradus Стандарт комплект 25 литров</p>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-6 rev-photo">
-										<div class="col-md-4 rev-photo-img">
+										<div class="col-md-4 rev-photo-img rev-img-one">
 										</div>
 										<div class="col-md-8 rev-photo-caption">
-											<p class="rev-name">Федя, г.Харьков
-												<span class="rev-date">05.04.2019</span>
+											<p class="rev-name">Тарас, г.Львов
+												<span class="rev-date">09.03.2019</span>
 											</p>
 											<div class="mark-box">
 												<div class="rev-mark">
@@ -972,7 +1107,7 @@
 												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
 											</div>
 											<p class="rev-text">
-												Работа магазина понравилась, интересоваться начал оборудованием с год назад. После первого звонка консультанты не давали мне пропасть, и это в плюс! Взял аппарат Де Люкс с 50л кубом. Доволен очень, друзья еще больше!!! Получаемый продукт ожидания превзошел, бочка под вторую заливку ждет бурбон! Сайт понятен и ясен, ориентироваться удобно. Пора обзаводиться форумом!
+												Якісне обладнання по адекватній ціні, що працює для Вашого задоволення. Поки Ви серфінгуєте по інших сайтах в пошуках привабливіших пропозицій - AquaGradus вже на крок попереду і працює для Вас. Відмінний результат отриманого продукту по справжньому оцінять як винокури, експерти своєї справи так і домашні компанії.
 											</p>
 										</div>
 									</div>
@@ -983,19 +1118,19 @@
 									<div class="col-md-6 rev-video">
 										<div class="rev-video-container">
 											<div class="embed-responsive embed-responsive-16by9">
-												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6rezXEnAsyU"></iframe>
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jyIUigq5ep0"></iframe>
 											</div>
 											<div class="rev-video-caption">
-												<p class="caption-t"><strong>Видео-отзыв Андрея, Харьков</strong><br>Первый опыт перегонки самогона на аппарате AquaGradus</p>
+												<p class="caption-t"><strong>Видео-отзыв Сергей Игнатенко</strong><br>Самогонный аппарат акваградус! ШОК!!!! Я такого качества еще не видел!!!</p>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-6 rev-photo">
-										<div class="col-md-4 rev-photo-img">
+										<div class="col-md-4 rev-photo-img rev-img-two">
 										</div>
 										<div class="col-md-8 rev-photo-caption">
-											<p class="rev-name">Пашка, г.Харьков
-												<span class="rev-date">05.04.2019</span>
+											<p class="rev-name">Владимир, г.Киев
+												<span class="rev-date">31.01.2019</span>
 											</p>
 											<div class="mark-box">
 												<div class="rev-mark">
@@ -1004,7 +1139,7 @@
 												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
 											</div>
 											<p class="rev-text">
-												Работа магазина понравилась, интересоваться начал оборудованием с год назад. После первого звонка консультанты не давали мне пропасть, и это в плюс! Взял аппарат Де Люкс с 50л кубом. Доволен очень, друзья еще больше!!! Получаемый продукт ожидания превзошел, бочка под вторую заливку ждет бурбон! Сайт понятен и ясен, ориентироваться удобно. Пора обзаводиться форумом!
+												При покупке были сомнения в достаточной жесткости куба. Когда получил на почте, все сомнения развеялись. Куб на 25 литров сварен качественно, достаточной жесткости (колонна не раскачиваеться, как на китайском аппарате), на индукционной плите нагреваеться без проблем. Акваградус стандарт оптимальный аппарат по цене-качеству. Разобраться с его работой очень просто, благо есть ютуб канал.
 											</p>
 										</div>
 									</div>
@@ -1015,19 +1150,19 @@
 									<div class="col-md-6 rev-video">
 										<div class="rev-video-container">
 											<div class="embed-responsive embed-responsive-16by9">
-												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6rezXEnAsyU"></iframe>
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MX-0w94cJXM"></iframe>
 											</div>
 											<div class="rev-video-caption">
-												<p class="caption-t"><strong>Видео-отзыв Андрея, Харьков</strong><br>Первый опыт перегонки самогона на аппарате AquaGradus</p>
+												<p class="caption-t"><strong>Видео-отзыв Алексей Рудько</strong><br>Мой первый опыт второй перегонки на аппарате AquaGradus</p>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-6 rev-photo">
-										<div class="col-md-4 rev-photo-img">
+										<div class="col-md-4 rev-photo-img rev-img-three">
 										</div>
 										<div class="col-md-8 rev-photo-caption">
-											<p class="rev-name">Толик, г.Харьков
-												<span class="rev-date">05.04.2019</span>
+											<p class="rev-name">Гельмут, г.Ужгород
+												<span class="rev-date">19.12.2018</span>
 											</p>
 											<div class="mark-box">
 												<div class="rev-mark">
@@ -1036,7 +1171,237 @@
 												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
 											</div>
 											<p class="rev-text">
-												Работа магазина понравилась, интересоваться начал оборудованием с год назад. После первого звонка консультанты не давали мне пропасть, и это в плюс! Взял аппарат Де Люкс с 50л кубом. Доволен очень, друзья еще больше!!! Получаемый продукт ожидания превзошел, бочка под вторую заливку ждет бурбон! Сайт понятен и ясен, ориентироваться удобно. Пора обзаводиться форумом!
+												У меня стандарт, заказывал год назад, продукт получается супер! Второй заказ был на комплектующие. Все пришло быстро. Покупкой доволен! Магазин хороший, менеджер профессионал своего дела. Много полезных вещей и новинок! Так держать! Рекомендую!!!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-md-6 rev-video">
+										<div class="rev-video-container">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zLdI9DhUTjw"></iframe>
+											</div>
+											<div class="rev-video-caption">
+												<p class="caption-t"><strong>Видео-отзыв Максим Макарон</strong><br>Попробовал производительность аппарата AquaGradus</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 rev-photo">
+										<div class="col-md-4 rev-photo-img rev-img-four">
+										</div>
+										<div class="col-md-8 rev-photo-caption">
+											<p class="rev-name">Владимир, г.Житомир
+												<span class="rev-date">10.12.2018</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Отримав Апарат Акваградус, спробував і з першого разу був приємно здивований простотою і саме головне якістю виготовленного продукту. Особлива подяка за хороший сервіс від представників даної компанії. Приємно співпрацювати, а саме: завжди доступні, особлива подяка за допомогу і консультації.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-md-6 rev-video">
+										<div class="rev-video-container">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2fUdfs6Vpew"></iframe>
+											</div>
+											<div class="rev-video-caption">
+												<p class="caption-t"><strong>Видео-отзыв Алексей Пузанов</strong><br>Распаковка AquaGradus Компакт на 14 л бак</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 rev-photo">
+										<div class="col-md-4 rev-photo-img rev-img-five">
+										</div>
+										<div class="col-md-8 rev-photo-caption">
+											<p class="rev-name">Сергей, г.Харьков
+												<span class="rev-date">31.10.2018</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Надумал купить аппарат, нашел две конторы акваградус и смакуй, больше как то приглянулся акваградус. Аппарат был куплен в октябре. парни с акваградуса рассказали все что знали и даже больше. Любой мой вопрос не остался без внимания. Аппаратом доволен, были маленькие неровности но снова менеджера акваградуса все разгладили и решили. Прилагаю мою довольную морду.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-md-6 rev-video">
+										<div class="rev-video-container">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZlJ5H541ipg"></iframe>
+											</div>
+											<div class="rev-video-caption">
+												<p class="caption-t"><strong>Видео-отзыв Георгий</strong><br>Оборудование бренда AquaGradus, аппарат ДеЛюкс</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 rev-photo">
+										<div class="col-md-4 rev-photo-img rev-img-six">
+										</div>
+										<div class="col-md-8 rev-photo-caption">
+											<p class="rev-name">Микола, г.Черкассы
+												<span class="rev-date">23.10.2018</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Придбав апарат Де Люкс.По апарату.Якість колони та куба на висоті!Сподобалась продуманість збірки всіх деталей. Сподобалось ставлення працівників компанії до клієнта, дуже якісно все пояснили, лишнього не порадять.Дуже Дякую!!!!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-md-6 rev-video">
+										<div class="rev-video-container">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GywMAR3cJjw"></iframe>
+											</div>
+											<div class="rev-video-caption">
+												<p class="caption-t"><strong>Видео-отзыв Руслан Рабченюк</strong><br>Отзыв о Aquagradus Standart 25 литров</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 rev-photo">
+										<div class="col-md-4 rev-photo-img rev-img-seven">
+										</div>
+										<div class="col-md-8 rev-photo-caption">
+											<p class="rev-name">Павел, г.Днепр
+												<span class="rev-date">19.12.2018</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Приобрел "Компакт" 25 л. Четкий аппарат! Сделан качественно. Удобный объем бака. Никаких проблем со сборкой и подготовкой к работе не было. Очень хорошо, что есть встроенный кран для слива из бака. Уже испытан. Продукт получился отличного качества (при дробной перегонке 84 градуса). Компании желаю успехов и процветания!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-md-6 rev-video">
+										<div class="rev-video-container">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lO4GFsoMWYk"></iframe>
+											</div>
+											<div class="rev-video-caption">
+												<p class="caption-t"><strong>Видео-отзыв Анатолий</strong><br>Мой первый опыт перегонки на самогонном аппарате Aquagradus Стандарт</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 rev-photo">
+										<div class="col-md-4 rev-photo-img rev-img-eight">
+										</div>
+										<div class="col-md-8 rev-photo-caption">
+											<p class="rev-name">Руслан, г.Киев
+												<span class="rev-date">21.08.2018</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Придбав апарат апарат Акваградус,доставили вчасно ,повний комплект якісний матеріал компанія супер скільки раз дзвонив завжди ввічливо відповідають і підказують
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-md-6 rev-video">
+										<div class="rev-video-container">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SgBEb3NkLX0"></iframe>
+											</div>
+											<div class="rev-video-caption">
+												<p class="caption-t"><strong>Видео-отзыв Сергей</strong><br>Видео-отчет о самогонном аппарате "Компакт" от компании Акваградус</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 rev-photo">
+										<div class="col-md-4 rev-photo-img rev-img-nine">
+										</div>
+										<div class="col-md-8 rev-photo-caption">
+											<p class="rev-name">Юрий, г.Сумы
+												<span class="rev-date">10.08.2018</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Доброго дня.
+												Пишу Вам, щоб виразити своє задоволення апаратом. Мені приємно, що комплектація така, що розпакував і все є для роботи, нічого докуповувати не треба.
+												З переваг:
+												1. Хороша комплектація
+												2. Якісна зварка швів
+												3. Бак працює на індукційній плиті.
+												Окремо хотів би виділити роботу вашого маркетингового відділу. Я був здивований, що Ви не полишаєте клієнта напризволяще, а супроводжуєте його.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-md-6 rev-video">
+										<div class="rev-video-container">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KoqAtBSIsgQ"></iframe>
+											</div>
+											<div class="rev-video-caption">
+												<p class="caption-t"><strong>Видео-отзыв Спазмалгон 83</strong><br>Комплект отбора голов от акваградус (распаковка, в работе)</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 rev-photo">
+										<div class="col-md-4 rev-photo-img rev-img-ten">
+										</div>
+										<div class="col-md-8 rev-photo-caption">
+											<p class="rev-name">Андрей, г.Полтава
+												<span class="rev-date">10.08.2018</span>
+											</p>
+											<div class="mark-box">
+												<div class="rev-mark">
+													<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+												</div>
+												<div class="rev-mark-text">Оценка работы сайта и магазина</div>
+											</div>
+											<p class="rev-text">
+												Добрый день.Заказал аппарат стандарт aquagradus,отправили в сроки.Сборка аппарата быстрая и удобная,по сравнению с моими самодельными аппаратами.Качество продукта отличное,перепробовал разные рецепты самогоноварения(сахарные,зерновые,фруктовые....браги)аппарат справляется.Всем советую приобрести агрегаты данного магазина AQUAGRADUS.Спасибо.
 											</p>
 										</div>
 									</div>
@@ -1142,17 +1507,9 @@
 								<div class="col-md-5 m-tab-img">
 									<div class="m-tab-imgbox">
 										<img src="img/adds/nasadka.png" alt="" class="img-responsive m-img active">
-										<img src="img/adds/nasadka-1.png" alt="" class="img-responsive m-img">
-										<img src="img/adds/nasadka-2.png" alt="" class="img-responsive m-img">
 									</div>
 									<div class="m-tab-box">
 										<a href="#" class="m-tab-link active">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
 											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
 										</a>
 									</div>
@@ -1186,8 +1543,16 @@
 										<div class="price">
 											1 500₴
 										</div>
-										<button class="btn btn-orange m-btn">купить</button>
 									</div>
+									<form method="post" class="m-adds-form" id="adds-nasadka-form">
+										<!-- hidden -->
+										<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - СПН">
+										<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+										<!-- hidden -->
+										<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+										<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+										<button type="submit" class="btn btn-orange m-btn">купить</button>
+									</form>
 									<div class="m-share-box">
 										<p class="text-share">Поделиться: </p>
 										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/spiralno-prizmaticheskaya-nasadka-1-kg/" target="_blank" class="m-share-link">
@@ -1207,19 +1572,15 @@
 							<div class="row">
 								<div class="col-md-5 m-tab-img">
 									<div class="m-tab-imgbox">
-										<img src="img/adds/nasadka.png" alt="" class="img-responsive m-img active">
-										<img src="img/adds/nasadka-1.png" alt="" class="img-responsive m-img">
-										<img src="img/adds/nasadka-2.png" alt="" class="img-responsive m-img">
+										<img src="img/adds/regulyator.png" alt="" class="img-responsive m-img active">
+										<img src="img/adds/regulyator-1.png" alt="" class="img-responsive m-img">
 									</div>
 									<div class="m-tab-box">
 										<a href="#" class="m-tab-link active">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/regulyator-l.png" alt="" class="img-responsive">
 										</a>
 										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/regulyator-l-1.png" alt="" class="img-responsive">
 										</a>
 									</div>
 								</div>
@@ -1227,7 +1588,7 @@
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 									</button>
-									<p class="title">Спирально призматическая насадка<br>(СПН), 1.5 кг</p>
+									<p class="title">Регулятор мощности нагрева АГ-2</p>
 									<div class="mark-box">
 										<div class="m-rev-mark">
 											<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
@@ -1235,28 +1596,35 @@
 										<div class="m-rev-mark-text">Оценка товара</div>
 									</div>
 									<div class="m-text-about">
-										<p>Спирально-призматичекая насадка (СПН) расчитана для наполнения ректификационных колон и царг дистилляторов в качестве контактной поверхности.</p>
-										<p>СПН изготавливают из нержавеющей стали. За счет оптимальной формы граней обеспеченивается массообменный процесс при ректификации.</p>
-										<p>Насадка производится в следующих рамерах:</p>
+										<p>Обеспечивает точный и бесперебойный нагрев.</p>
+										<p>Блок управления трубчатым электро нагревателем (ТЭН) — регулятор мощности. Предназначен для управления ТЭНом до 5 кВт. Позволяет производить плавную регулировку нагрева путем вращения регулятора.</p>
+										<p>Электроника размещена в надежном корпусе из нержавеющей стали с мощным охладителем. Оборудован удобным выключателем. Дисплей с отображением режима работы, напряжением в сети, подающейся мощности на ТЭН. Надежное крепление клемм ТЭНа:</p>
 										<ul>
-											<li>3,5х3,5 - плотность одного литра примерно 1 кг</li>
-											<li>толщина проволоки 0,25мм</li>
-											<li>материал - нержавеющая сталь АISI 321</li>
+											<li>Мощность - до 5 кВт</li>
+											<li>Корпус - Нержавеющая сталь</li>
 										</ul>
-										<p>Для получения спирта 96,6 градусов - обязательна к покупке!</p>
+										<p>Для организации автономного нагрева: скорость перегонки и мобильность эксплуатации.</p>
 									</div>
 									<div class="m-buy-box">
 										<div class="price-text">
-											Цена (1,5 кг):
+											Цена:
 										</div>
 										<div class="price">
-											1 500₴
+											1 600₴
 										</div>
-										<button class="btn btn-orange m-btn">купить</button>
 									</div>
+									<form method="post" class="m-adds-form" id="adds-regulyator-form">
+										<!-- hidden -->
+										<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - РМ АГ 2">
+										<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+										<!-- hidden -->
+										<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+										<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+										<button type="submit" class="btn btn-orange m-btn">купить</button>
+									</form>
 									<div class="m-share-box">
 										<p class="text-share">Поделиться: </p>
-										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/spiralno-prizmaticheskaya-nasadka-1-kg/" target="_blank" class="m-share-link">
+										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/regulyator-moschnosti-nagreva-ag-2/" target="_blank" class="m-share-link">
 											<img src="img/adds/facebook.png" alt="" class="img-responsive">
 										</a>
 									</div>
@@ -1273,19 +1641,11 @@
 							<div class="row">
 								<div class="col-md-5 m-tab-img">
 									<div class="m-tab-imgbox">
-										<img src="img/adds/nasadka.png" alt="" class="img-responsive m-img active">
-										<img src="img/adds/nasadka-1.png" alt="" class="img-responsive m-img">
-										<img src="img/adds/nasadka-2.png" alt="" class="img-responsive m-img">
+										<img src="img/adds/ten.png" alt="" class="img-responsive m-img active">
 									</div>
 									<div class="m-tab-box">
 										<a href="#" class="m-tab-link active">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/ten-l.png" alt="" class="img-responsive">
 										</a>
 									</div>
 								</div>
@@ -1293,36 +1653,42 @@
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 									</button>
-									<p class="title">Спирально призматическая насадка<br>(СПН), 1.5 кг</p>
+									<p class="title">Водяной ТЭН для самогонного аппарата</p>
 									<div class="mark-box">
 										<div class="m-rev-mark">
-											<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
+											<img src="img/review/star-4.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
 										</div>
 										<div class="m-rev-mark-text">Оценка товара</div>
 									</div>
 									<div class="m-text-about">
-										<p>Спирально-призматичекая насадка (СПН) расчитана для наполнения ректификационных колон и царг дистилляторов в качестве контактной поверхности.</p>
-										<p>СПН изготавливают из нержавеющей стали. За счет оптимальной формы граней обеспеченивается массообменный процесс при ректификации.</p>
+										<p>Благодаря тому, что конструкция ТЭНа закрыта, устройство обеспечивает высокий уровень безопасности, не боится вибрации ударов и контакта с жидкостью. Однако стоит заметить, что ТЭН бывают двух основных типов, воздушные и водяные. В самогонный аппарат годятся только последние, но для них есть одно ограничительное условие: при работе они всегда должны находиться в контакте с жидкостью, иначе сгорят.</p>
+										<p>Однако практичность, надежность и безопасность относят ТЭН к устройствам, которые чаще всего используются в качестве нагревателя в самогонном аппарате.</p>
 										<p>Насадка производится в следующих рамерах:</p>
 										<ul>
-											<li>3,5х3,5 - плотность одного литра примерно 1 кг</li>
-											<li>толщина проволоки 0,25мм</li>
-											<li>материал - нержавеющая сталь АISI 321</li>
+											<li>Мощность - 3 кВт</li>
 										</ul>
-										<p>Для получения спирта 96,6 градусов - обязательна к покупке!</p>
+										<p>Для организации автономного и комбинированного нагрева!</p>
 									</div>
 									<div class="m-buy-box">
 										<div class="price-text">
-											Цена (1,5 кг):
+											Цена:
 										</div>
 										<div class="price">
-											1 500₴
+											250₴
 										</div>
-										<button class="btn btn-orange m-btn">купить</button>
 									</div>
+									<form method="post" class="m-adds-form" id="adds-ten-form">
+										<!-- hidden -->
+										<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - ТЭН">
+										<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+										<!-- hidden -->
+										<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+										<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+										<button type="submit" class="btn btn-orange m-btn">купить</button>
+									</form>
 									<div class="m-share-box">
 										<p class="text-share">Поделиться: </p>
-										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/spiralno-prizmaticheskaya-nasadka-1-kg/" target="_blank" class="m-share-link">
+										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/vodyanoj-ten-dlya-samogonnogo-apparat/" target="_blank" class="m-share-link">
 											<img src="img/adds/facebook.png" alt="" class="img-responsive">
 										</a>
 									</div>
@@ -1339,19 +1705,15 @@
 							<div class="row">
 								<div class="col-md-5 m-tab-img">
 									<div class="m-tab-imgbox">
-										<img src="img/adds/nasadka.png" alt="" class="img-responsive m-img active">
-										<img src="img/adds/nasadka-1.png" alt="" class="img-responsive m-img">
-										<img src="img/adds/nasadka-2.png" alt="" class="img-responsive m-img">
+										<img src="img/adds/zaglushka.png" alt="" class="img-responsive m-img active">
+										<img src="img/adds/zaglushka-1.png" alt="" class="img-responsive m-img">
 									</div>
 									<div class="m-tab-box">
 										<a href="#" class="m-tab-link active">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/zaglushka-l.png" alt="" class="img-responsive">
 										</a>
 										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/zaglushka-l-1.png" alt="" class="img-responsive">
 										</a>
 									</div>
 								</div>
@@ -1359,7 +1721,7 @@
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 									</button>
-									<p class="title">Спирально призматическая насадка<br>(СПН), 1.5 кг</p>
+									<p class="title">Муфта под ТЭН (заглушка продается отдельно)</p>
 									<div class="mark-box">
 										<div class="m-rev-mark">
 											<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
@@ -1367,28 +1729,30 @@
 										<div class="m-rev-mark-text">Оценка товара</div>
 									</div>
 									<div class="m-text-about">
-										<p>Спирально-призматичекая насадка (СПН) расчитана для наполнения ректификационных колон и царг дистилляторов в качестве контактной поверхности.</p>
-										<p>СПН изготавливают из нержавеющей стали. За счет оптимальной формы граней обеспеченивается массообменный процесс при ректификации.</p>
-										<p>Насадка производится в следующих рамерах:</p>
-										<ul>
-											<li>3,5х3,5 - плотность одного литра примерно 1 кг</li>
-											<li>толщина проволоки 0,25мм</li>
-											<li>материал - нержавеющая сталь АISI 321</li>
-										</ul>
-										<p>Для получения спирта 96,6 градусов - обязательна к покупке!</p>
+										<p>Муфта врезается в куб, через которую можно вкрутить ТЭН или парогенератор.</p>
+										<p>Изделие из нержавеющей стали AISI 304, что гарантирует Вам долговечность деталей при эксплуатации.</p>
+										<p>Для организации автономного нагрева.</p>
 									</div>
 									<div class="m-buy-box">
 										<div class="price-text">
-											Цена (1,5 кг):
+											Цена:
 										</div>
 										<div class="price">
-											1 500₴
+											250₴
 										</div>
-										<button class="btn btn-orange m-btn">купить</button>
 									</div>
+									<form method="post" class="m-adds-form" id="adds-mufta-form">
+										<!-- hidden -->
+										<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Муфта под ТЭН">
+										<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+										<!-- hidden -->
+										<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+										<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+										<button type="submit" class="btn btn-orange m-btn">купить</button>
+									</form>
 									<div class="m-share-box">
 										<p class="text-share">Поделиться: </p>
-										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/spiralno-prizmaticheskaya-nasadka-1-kg/" target="_blank" class="m-share-link">
+										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/mufta-pod-ten/" target="_blank" class="m-share-link">
 											<img src="img/adds/facebook.png" alt="" class="img-responsive">
 										</a>
 									</div>
@@ -1405,19 +1769,15 @@
 							<div class="row">
 								<div class="col-md-5 m-tab-img">
 									<div class="m-tab-imgbox">
-										<img src="img/adds/nasadka.png" alt="" class="img-responsive m-img active">
-										<img src="img/adds/nasadka-1.png" alt="" class="img-responsive m-img">
-										<img src="img/adds/nasadka-2.png" alt="" class="img-responsive m-img">
+										<img src="img/adds/deflegmator.png" alt="" class="img-responsive m-img active">
+										<img src="img/adds/deflegmator-1.png" alt="" class="img-responsive m-img">
 									</div>
 									<div class="m-tab-box">
 										<a href="#" class="m-tab-link active">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/deflegmator-l.png" alt="" class="img-responsive">
 										</a>
 										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/deflegmator-l-1.png" alt="" class="img-responsive">
 										</a>
 									</div>
 								</div>
@@ -1425,7 +1785,7 @@
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 									</button>
-									<p class="title">Спирально призматическая насадка<br>(СПН), 1.5 кг</p>
+									<p class="title">Дефлегматор AquaGradus Кожухотрубный</p>
 									<div class="mark-box">
 										<div class="m-rev-mark">
 											<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
@@ -1433,28 +1793,30 @@
 										<div class="m-rev-mark-text">Оценка товара</div>
 									</div>
 									<div class="m-text-about">
-										<p>Спирально-призматичекая насадка (СПН) расчитана для наполнения ректификационных колон и царг дистилляторов в качестве контактной поверхности.</p>
-										<p>СПН изготавливают из нержавеющей стали. За счет оптимальной формы граней обеспеченивается массообменный процесс при ректификации.</p>
-										<p>Насадка производится в следующих рамерах:</p>
-										<ul>
-											<li>3,5х3,5 - плотность одного литра примерно 1 кг</li>
-											<li>толщина проволоки 0,25мм</li>
-											<li>материал - нержавеющая сталь АISI 321</li>
-										</ul>
-										<p>Для получения спирта 96,6 градусов - обязательна к покупке!</p>
+										<p>Дефлегматор – одна из важнейших конструктивных частей самогонного аппарата.</p>
+										<p>Конструкция дефлегматора представляет собой цилиндрическую колонну длиной 20см и внутренним диаметром 51 мм, и зготовленную из высококачественной нержавеющей стали марки AISI 304. Внутрь цилиндра вварены трубки диаметром 10 мм 5 штук. Такой тип охлаждения называется кожухотрубным.</p>
+										<p>Установив дефлегматор AquaGradus™ на свой дистиллятор Вы значительно повысите эффективность укрепления паров спиртосодержащей жидкости и очистку паров от вредных примесей.</p>
 									</div>
 									<div class="m-buy-box">
 										<div class="price-text">
-											Цена (1,5 кг):
+											Цена:
 										</div>
 										<div class="price">
-											1 500₴
+											1 000₴
 										</div>
-										<button class="btn btn-orange m-btn">купить</button>
 									</div>
+									<form method="post" class="m-adds-form" id="adds-deflegmator-form">
+										<!-- hidden -->
+										<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Дефлегматор">
+										<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+										<!-- hidden -->
+										<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+										<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+										<button type="submit" class="btn btn-orange m-btn">купить</button>
+									</form>
 									<div class="m-share-box">
 										<p class="text-share">Поделиться: </p>
-										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/spiralno-prizmaticheskaya-nasadka-1-kg/" target="_blank" class="m-share-link">
+										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/deflegmator/" target="_blank" class="m-share-link">
 											<img src="img/adds/facebook.png" alt="" class="img-responsive">
 										</a>
 									</div>
@@ -1471,19 +1833,11 @@
 							<div class="row">
 								<div class="col-md-5 m-tab-img">
 									<div class="m-tab-imgbox">
-										<img src="img/adds/nasadka.png" alt="" class="img-responsive m-img active">
-										<img src="img/adds/nasadka-1.png" alt="" class="img-responsive m-img">
-										<img src="img/adds/nasadka-2.png" alt="" class="img-responsive m-img">
+										<img src="img/adds/aromadioptr.png" alt="" class="img-responsive m-img active">
 									</div>
 									<div class="m-tab-box">
 										<a href="#" class="m-tab-link active">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/aromadioptr-l.png" alt="" class="img-responsive">
 										</a>
 									</div>
 								</div>
@@ -1491,7 +1845,7 @@
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 									</button>
-									<p class="title">Спирально призматическая насадка<br>(СПН), 1.5 кг</p>
+									<p class="title">Арома-Диоптр Aquagradus</p>
 									<div class="mark-box">
 										<div class="m-rev-mark">
 											<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
@@ -1499,28 +1853,30 @@
 										<div class="m-rev-mark-text">Оценка товара</div>
 									</div>
 									<div class="m-text-about">
-										<p>Спирально-призматичекая насадка (СПН) расчитана для наполнения ректификационных колон и царг дистилляторов в качестве контактной поверхности.</p>
-										<p>СПН изготавливают из нержавеющей стали. За счет оптимальной формы граней обеспеченивается массообменный процесс при ректификации.</p>
-										<p>Насадка производится в следующих рамерах:</p>
-										<ul>
-											<li>3,5х3,5 - плотность одного литра примерно 1 кг</li>
-											<li>толщина проволоки 0,25мм</li>
-											<li>материал - нержавеющая сталь АISI 321</li>
-										</ul>
-										<p>Для получения спирта 96,6 градусов - обязательна к покупке!</p>
+										<p>Перегонка в режиме укрепления с диоптром - завораживающий процесс, а наполненый диоптр сухофруктами, ягодами и экзотическими фруктами в процессе перегонки не оставит ни кого равнодушным. С диоптром Вы гарантированно будете уверены в том что процесс протекает правильно, а с совмещенной джин корзиной ароматизация напитков станет значительно проще и профессиональней.</p>
+										<p>Конструкция цилиндра джин-корзины оснащена трубкой безопасности. Если, вдруг, вы перестараетесь с сырьем для ароматизации, перекрыв дальнейшее поступления паров через рубашку аромакорзины, то за счет данной трубки пар продолжит поступать в колонну. Таким образом вам не прийдется останавливать процесс перегонки, чтобы убрать излишек сырья.</p>
+										<p>Для более комфортной перегонки и ароматизации продукта.</p>
 									</div>
 									<div class="m-buy-box">
 										<div class="price-text">
-											Цена (1,5 кг):
+											Цена:
 										</div>
 										<div class="price">
-											1 500₴
+											2 150₴
 										</div>
-										<button class="btn btn-orange m-btn">купить</button>
 									</div>
+									<form method="post" class="m-adds-form" id="adds-jioptr-form">
+										<!-- hidden -->
+										<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Джиоптр">
+										<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+										<!-- hidden -->
+										<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+										<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+										<button type="submit" class="btn btn-orange m-btn">купить</button>
+									</form>
 									<div class="m-share-box">
 										<p class="text-share">Поделиться: </p>
-										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/spiralno-prizmaticheskaya-nasadka-1-kg/" target="_blank" class="m-share-link">
+										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/aroma-dioptr-aquagradus-flanec/" target="_blank" class="m-share-link">
 											<img src="img/adds/facebook.png" alt="" class="img-responsive">
 										</a>
 									</div>
@@ -1537,19 +1893,11 @@
 							<div class="row">
 								<div class="col-md-5 m-tab-img">
 									<div class="m-tab-imgbox">
-										<img src="img/adds/nasadka.png" alt="" class="img-responsive m-img active">
-										<img src="img/adds/nasadka-1.png" alt="" class="img-responsive m-img">
-										<img src="img/adds/nasadka-2.png" alt="" class="img-responsive m-img">
+										<img src="img/adds/popugay.png" alt="" class="img-responsive m-img active">
 									</div>
 									<div class="m-tab-box">
 										<a href="#" class="m-tab-link active">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/popugay-l.png" alt="" class="img-responsive">
 										</a>
 									</div>
 								</div>
@@ -1557,7 +1905,7 @@
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 									</button>
-									<p class="title">Спирально призматическая насадка<br>(СПН), 1.5 кг</p>
+									<p class="title">Непрерывный контроль крепости (Попугай)</p>
 									<div class="mark-box">
 										<div class="m-rev-mark">
 											<img src="img/review/star-5.jpg" alt="отзыв о самогонном аппарате aquagradus" class="img-responsive">
@@ -1565,28 +1913,31 @@
 										<div class="m-rev-mark-text">Оценка товара</div>
 									</div>
 									<div class="m-text-about">
-										<p>Спирально-призматичекая насадка (СПН) расчитана для наполнения ректификационных колон и царг дистилляторов в качестве контактной поверхности.</p>
-										<p>СПН изготавливают из нержавеющей стали. За счет оптимальной формы граней обеспеченивается массообменный процесс при ректификации.</p>
-										<p>Насадка производится в следующих рамерах:</p>
-										<ul>
-											<li>3,5х3,5 - плотность одного литра примерно 1 кг</li>
-											<li>толщина проволоки 0,25мм</li>
-											<li>материал - нержавеющая сталь АISI 321</li>
-										</ul>
-										<p>Для получения спирта 96,6 градусов - обязательна к покупке!</p>
+										<p>Самый удобный способ отследить конец перегонки.</p>
+										<p>Теперь в процессе перегонки Вам не придется наполнять мерные емкости, чтобы снять показания спиртометра - Вы будете видеть крепость прямо в процессе перегона!</p>
+										<p>Также с помощью устройства Вы не прозеваете окончание перегонки. Когда спирта в браге не остается, крепость вашего напитка начнет резко падать.</p>
+										<p>Для точного измерения продукта в реальном времени!</p>
 									</div>
 									<div class="m-buy-box">
 										<div class="price-text">
-											Цена (1,5 кг):
+											Цена:
 										</div>
 										<div class="price">
-											1 500₴
+											750₴
 										</div>
-										<button class="btn btn-orange m-btn">купить</button>
 									</div>
+									<form method="post" class="m-adds-form" id="adds-popugai-form">
+										<!-- hidden -->
+										<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Gjgeufq">
+										<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+										<!-- hidden -->
+										<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+										<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+										<button type="submit" class="btn btn-orange m-btn">купить</button>
+									</form>
 									<div class="m-share-box">
 										<p class="text-share">Поделиться: </p>
-										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/spiralno-prizmaticheskaya-nasadka-1-kg/" target="_blank" class="m-share-link">
+										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/nepreryvnyj-kontrol-kreposti-popugaj/" target="_blank" class="m-share-link">
 											<img src="img/adds/facebook.png" alt="" class="img-responsive">
 										</a>
 									</div>
@@ -1604,18 +1955,10 @@
 								<div class="col-md-5 m-tab-img">
 									<div class="m-tab-imgbox">
 										<img src="img/adds/kit.png" alt="" class="img-responsive m-img active">
-										<img src="img/adds/kit.png" alt="" class="img-responsive m-img">
-										<img src="img/adds/kit.png" alt="" class="img-responsive m-img">
 									</div>
 									<div class="m-tab-box">
 										<a href="#" class="m-tab-link active">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
-										</a>
-										<a href="#" class="m-tab-link">
-											<img src="img/adds/nasadka-l.png" alt="" class="img-responsive">
+											<img src="img/adds/kit-l.png" alt="" class="img-responsive">
 										</a>
 									</div>
 								</div>
@@ -1631,28 +1974,36 @@
 										<div class="m-rev-mark-text">Оценка товара</div>
 									</div>
 									<div class="m-text-about">
-										<p>Спирально-призматичекая насадка (СПН) расчитана для наполнения ректификационных колон и царг дистилляторов в качестве контактной поверхности.</p>
-										<p>СПН изготавливают из нержавеющей стали. За счет оптимальной формы граней обеспеченивается массообменный процесс при ректификации.</p>
-										<p>Насадка производится в следующих рамерах:</p>
+										<p>Точный контроль крепости продукта.</p>
+										<p>Предназначен для измерения объемной концентрации этилового спирта в водных растворах в широком диапазоне.</p>
+										<p>Существует не много способов измерения концентрации спирта в самогоне или любом другом растворе. Ареометр наиболее верный и точный измерительный прибор, способный определить содержание нейтрального спирта в жидкости в диапазоне от 0 до 100 % об.</p>
 										<ul>
-											<li>3,5х3,5 - плотность одного литра примерно 1 кг</li>
-											<li>толщина проволоки 0,25мм</li>
-											<li>материал - нержавеющая сталь АISI 321</li>
+											<li>Ареометр 0-40 - 1 шт.</li>
+											<li>Ареометр 40-70 - 1 шт.</li>
+											<li>Ареометр 70-100 - 1 шт.</li>
+											<li>Мерная колба - 1 шт.</li>
 										</ul>
-										<p>Для получения спирта 96,6 градусов - обязательна к покупке!</p>
 									</div>
 									<div class="m-buy-box">
 										<div class="price-text">
-											Цена (1,5 кг):
+											Цена:
 										</div>
 										<div class="price">
-											1 500₴
+											350₴
 										</div>
-										<button class="btn btn-orange m-btn">купить</button>
 									</div>
+									<form method="post" class="m-adds-form" id="adds-areometri-form">
+										<!-- hidden -->
+										<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Fhtjvtnhs">
+										<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+										<!-- hidden -->
+										<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+										<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+										<button type="submit" class="btn btn-orange m-btn">купить</button>
+									</form>
 									<div class="m-share-box">
 										<p class="text-share">Поделиться: </p>
-										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/spiralno-prizmaticheskaya-nasadka-1-kg/" target="_blank" class="m-share-link">
+										<a href="https://www.facebook.com/sharer.php?u=https://aquagradus.com/nabor-professionalnyh-areometrov-i-mernaya-kolba/" target="_blank" class="m-share-link">
 											<img src="img/adds/facebook.png" alt="" class="img-responsive">
 										</a>
 									</div>
@@ -1663,7 +2014,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="about">
+		<section id="about" class="about">
 			<div class="container">
 				<div class="row">
 					<h2 class="h2">Как мы работаем?</h2>
@@ -1724,7 +2075,7 @@
 								<div class="collapse">
 									<div class="card-block">
 										<p>
-											Для того, чтобы сделать аппараты доступнее по цене, мы экономим на аренде помещений, зарплатах продавцов и прочих накладных расходах, ведущих к удорожанию товара. Отлаженная система доставки до квартиры и большое количество заказов по стране позволяет сделать доставку прямо с завода очень быстрой! Мы на 100% уверены, что прибор Вам понравится, поэтому не взимаем никакой предоплаты: заказ Вы оплачиваете, после того как он будет у Вас в руках и Вы убедитесь, что Вам все нравится. Это 100% гарантия, что Вы будете довольны прибором. Узнать о доставке в свой город вы <a href="#about" class="link">можете здесь</a>
+											Для того, чтобы сделать аппараты доступнее по цене, мы экономим на аренде помещений, зарплатах продавцов и прочих накладных расходах, ведущих к удорожанию товара. Отлаженная система доставки до квартиры и большое количество заказов по стране позволяет сделать доставку прямо с завода очень быстрой! Мы на 100% уверены, что прибор Вам понравится, поэтому не взимаем никакой предоплаты: заказ Вы оплачиваете, после того как он будет у Вас в руках и Вы убедитесь, что Вам все нравится. Это 100% гарантия, что Вы будете довольны прибором.
 										</p>
 									</div>
 								</div>
@@ -1738,7 +2089,7 @@
 								<div class="collapse">
 									<div class="card-block">
 										<p>
-											Цена на 25 л - 5950₴, 35 л - 6450₴, 50 л - 6950₴. Чтобы узнать цены на аппарат нажмите на кнопку купить.
+											Цена на 25 л - 6830₴, 35 л - 7330₴, 50 л - 7830₴. Чтобы узнать цены на аппарат нажмите на кнопку купить.
 											<a href="#constructor" class="link link-one">Купить аппарат</a>
 										</p>
 									</div>
@@ -1775,7 +2126,7 @@
 						</div>
 					</div>
 					<div class="col-md-5 faq-form">
-						<form method="post" class="faq-form-container">
+						<form method="post" class="faq-form-container" id="faq-form-container">
 							<p class="faq-title">Нет нужного ответа?</p>
 							<p class="faq-cta">Напишите нам и мы<br>
 							обязательно ответим в течение 1го дня</p>
@@ -1785,8 +2136,7 @@
 								<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
 								<!-- hidden -->
 								<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
-								<!-- <input type="text" class="form-item" name="DATA[COMMENTS]" required placeholder="Ваш вопрос"> -->
-								<textarea name="DATA[COMMENTS]" cols="30" rows="6" class="form-item com-item" placeholder="Ваш вопрос"></textarea>
+								<textarea name="DATA[COMMENTS]" cols="30" rows="6" class="form-item com-item" placeholder="Ваш вопрос" required></textarea>
 								<button type="submit" class="btn btn-green faq-btn">задать вопрос</button>
 							</div>
 						</form>
@@ -1794,7 +2144,7 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
+		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2 footer-logo">
@@ -1821,70 +2171,76 @@
 							</li>
 							<li class="cont-item">
 								<img src="img/footer/worldwide.png" alt="" class="img-responsive">
-							<a href="https://aquagradus.com/" target="_blank" class="cont">aquagradus.com</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-2 footer-time">
-					<p class="f-title">Время работы</p>
-					<ul class="cont-box">
-						<li class="cont-item">
-							<p class="cont">Пн-Вс с 9-00 до 20-00<br>Без выходных</p>
-						</li>
-						<li class="cont-item">
-							<p class="cont"></p>
-						</li>
-						<li class="cont-item">
-							<p class="cont"><a href="/politika-konfidencialnosti" target="_blank">Политика<br>конфиденциальности</a></p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-2 footer-social">
-					<p class="f-title">Мы в соцсетях</p>
-					<div class="f-soc-box">
-						<div class="soc-item">
-							<img src="img/footer/facebook.png" alt="" class="img-responsive">
-						</div>
-						<div class="soc-item">
-							<img src="img/footer/vk.png" alt="" class="img-responsive">
-						</div>
-						<div class="soc-item">
-							<img src="img/footer/youtube.png" alt="" class="img-responsive">
-						</div>
-						<div class="soc-item">
-							<img src="img/footer/instagram.png" alt="" class="img-responsive">
+								<a href="https://aquagradus.com/" target="_blank" class="cont">aquagradus.com</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2 footer-time">
+						<p class="f-title">Время работы</p>
+						<ul class="cont-box">
+							<li class="cont-item">
+								<p class="cont">Пн-Вс с 9-00 до 20-00<br>Без выходных</p>
+							</li>
+							<li class="cont-item">
+								<p class="cont"></p>
+							</li>
+							<li class="cont-item">
+								<p class="cont"><a href="/politika-konfidencialnosti" target="_blank">Политика<br>конфиденциальности</a></p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2 footer-social">
+						<p class="f-title">Мы в соцсетях</p>
+						<div class="f-soc-box">
+							<div class="soc-item">
+								<a href="https://www.facebook.com/aquagradus.official" target="_blank">
+									<img src="img/footer/facebook.png" alt="" class="img-responsive">
+								</a>
+							</div>
+							<div class="soc-item">
+								<a href="https://vk.com/aquagradus" target="_blank">
+									<img src="img/footer/vk.png" alt="" class="img-responsive">
+								</a>
+							</div>
+							<div class="soc-item">
+								<a href="https://www.youtube.com/aquagradus" target="_blank">
+									<img src="img/footer/youtube.png" alt="" class="img-responsive">
+								</a>
+							</div>
+							<div class="soc-item">
+								<a href="https://www.instagram.com/aquagradus/" target="_blank">
+									<img src="img/footer/instagram.png" alt="" class="img-responsive">
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 footer-consultation">
-					<p class="f-title">Сервис и консультация.<br>Менеджер свяжется с Вами<br>в течение 10 минут</p>
-					<button class="btn f-btn" data-toggle="modal" data-target="#footer-call">связаться с менеджером</button>
-				</div>
-			</div>
-		</div>
-		<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="footer-call">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<form method="post" class="modal-content modal-box">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-					</button>
-					<p class="modal-h">Заказать обратный звонок</p>
-					<p class="modal-title">Оставьте заявку и наш менеджер перезвонит Вам через 15 минут!</p>
-					<div class="form-group">
-						<!-- hidden -->
-						<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Обратный звонок">
-						<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
-						<!-- hidden -->
-						<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
-						<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
-						<button type="submit" class="btn btn-green modal-btn">связаться с менеджером</button>
+					<div class="col-md-3 footer-consultation">
+						<p class="f-title">Сервис и консультация.<br>Менеджер свяжется с Вами<br>в течение 10 минут</p>
+						<button class="btn f-btn" data-toggle="modal" data-target="#footer-call">связаться с менеджером</button>
 					</div>
-				</form>
+				</div>
 			</div>
-		</div>
-	</footer>
-	<script src="js/scripts.min.js"></script>
-	<script src="https://www.youtube.com/iframe_api"></script>
-	<script src="libs/videoAPI/video.js"></script>
-</body>
+			<div class="modal animated zoomIn" tabindex="-1" role="dialog" id="footer-call">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<form method="post" class="modal-content modal-box" id="footer-call-form">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+						<p class="modal-h">Заказать обратный звонок</p>
+						<p class="modal-title">Оставьте заявку и наш менеджер перезвонит Вам через 15 минут!</p>
+						<div class="form-group">
+							<!-- hidden -->
+							<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Обратный звонок">
+							<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
+							<!-- hidden -->
+							<input type="text" class="form-item" name="DATA[NAME]" required placeholder="Ваше имя">
+							<input type="tel" class="form-item" name="DATA[PHONE_MOBILE]" required placeholder="Ваш телефон">
+							<button type="submit" class="btn btn-green modal-btn">связаться с менеджером</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<script src="js/scripts.min.js"></script>
+	</body>
 </html>

@@ -24,6 +24,72 @@
 // ≤768px
 +media-breakpoint-up(md)
 
+	header
+		.nav-sticky
+			.navbar-desctop
+				display: flex
+			.navbar-mobile
+				display: none
+		.header-wellcome
+			padding-top: rem(90)
+			padding-bottom: rem(60)
+			.container
+				.row
+					.plus-box
+						.h1-desctop
+							display: block
+						.utp-header
+							font-size: rem(24)
+							line-height: rem(30)
+							font-weight: 500
+							margin-bottom: rem(30)
+						.plus-block
+							.list-header
+								font-size: rem(24)
+								font-weight: bold
+							ul
+								li
+									margin-bottom: rem(25)
+									i
+									p
+										font-size: rem(18)
+										line-height: rem(24)
+					.device-box
+						.img-device
+							position: absolute
+							margin: initial
+						.img-warranty
+							left: rem(-5)
+							top: rem(240)
+					.form-box
+						.h1-mobile
+							display: none
+						.form-header
+							padding: rem(30)
+							margin-bottom: 0
+							.cta
+								font-size: rem(24)
+								line-height: rem(32)
+								margin-bottom: rem(30)
+								span
+							.price
+								margin-bottom: rem(30)
+								.price-item
+									.new-price
+									.old-price
+							.form-group
+								.form-item
+								.header-btn
+
+	.tips
+		.container
+			.row
+				flex-wrap: nowrap
+				.tips-container
+					img
+					p
+
+
 // ≤992px
 +media-breakpoint-up(lg)
 

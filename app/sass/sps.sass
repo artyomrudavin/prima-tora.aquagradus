@@ -1,0 +1,337 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+ul
+	list-style: none
+	padding: 0
+	margin: 0
+
+button,
+button:active,
+button:focus
+	outline: none
+
+.btn
+	display: block
+	border-radius: 5px
+	height: rem(44)
+	width: 100%
+	border: none
+	font-size: rem(14)
+	font-weight: bold
+	color: #fff
+	transition: .7s
+	cursor: pointer
+
+
+.btn-orange
+	background-color: $orange
+	&:hover
+		background-color: darken($orange, 10%)
+
+.btn-green
+	background-color: $green
+	&:hover
+		background-color: darken($green, 10%)
+
+.h1
+	font-family: $h-font
+
+.h2
+	font-family: $h-font
+	font-size: rem(36)
+	font-weight: bold
+	line-height: rem(44)
+	width: 100%
+
+// Modal Start
+
+.modal
+	.modal-dialog
+		.modal-box, .modal-content
+			position: relative
+			background-color: #FFFFFF
+			border-radius: 5px
+			padding: rem(40) rem(60)
+			.close
+				position: absolute
+				right: 0
+				top: 0
+				background-color: transparent
+				padding: 0
+				border: none
+				cursor: pointer
+				span
+					font-size: rem(48)
+					line-height: initial
+					font-weight: bold
+					color: $grey
+					padding: 0 rem(23)
+			.modal-h
+				color: $accent
+				font-size: rem(36)
+				font-weight: bold
+				line-height: rem(42)
+				text-align: center
+				margin-bottom: rem(20)
+			.modal-title
+				font-size: rem(24)
+				font-weight: 500
+				line-height: rem(32)
+				text-align: center
+				margin-bottom: rem(30)
+			.form-group
+				display: flex
+				flex-direction: column
+				.form-item
+					margin-bottom: rem(20)
+					height: rem(44)
+					border: 1px solid $grey
+					color: $grey
+					border-radius: 5px
+					background-color: #FFFFFF
+					padding: rem(14)
+
+// Modal End
+
+// Modal-add Start
+
+.modal
+	.modal-dialog
+		&.modal-full
+			max-width: rem(1000)
+		.modal-content
+			background-color: #FFFFFF
+			padding: rem(30)
+			.container-fluid
+				.row
+					.m-tab-img
+						.m-tab-imgbox
+							border: 2px solid $accent
+							margin-bottom: rem(15)
+							.m-img
+								display: none
+								&.active
+									display: block
+						.m-tab-box
+							display: flex
+							// justify-content: space-between
+							.m-tab-link
+								border: 2px solid $accent
+								padding: rem(10)
+								margin-right: rem(15)
+					.m-text
+						.close
+							top: rem(-25)
+							right: rem(-25)
+						.title
+							font-family: $h-font
+							font-size: rem(24)
+							line-height: rem(32)
+							font-weight: bold
+							margin-bottom: rem(20)
+						.mark-box
+							display: flex
+							margin-bottom: rem(20)
+							.m-rev-mark
+								flex: 0 0 auto
+								margin-right: rem(10)
+							.m-rev-mark-text
+								flex: 0 0 auto
+								font-size: rem(14)
+								line-height: rem(14)
+								color: $orange
+						.m-text-about
+							font-size: rem(14)
+							line-height: rem(20)
+							p
+								margin-bottom: rem(15)
+						.m-buy-box
+							display: flex
+							align-items: center
+							margin-bottom: rem(15)
+							.price-text
+								flex: 0 0 auto
+								color: #222222
+								margin-right: rem(30)
+								font-size: rem(18)
+								font-weight: 500
+							.price
+								flex: 0 0 auto
+								color: $green
+								font-size: rem(40)
+								font-weight: bold
+								line-height: rem(47)
+								margin-right: rem(25)
+						.m-adds-form
+							display: flex
+							width: 100%
+							.form-item
+								width: 100%
+								height: rem(44)
+								border: 1px solid $grey
+								color: $grey
+								border-radius: 5px
+								background-color: #FFFFFF
+								padding: rem(14)
+								margin-bottom: rem(15)
+								margin-right: rem(10)
+						.m-share-box
+							display: flex
+							align-items: center
+							.text-share
+								font-size: rem(14)
+								margin: 0
+								margin-right: rem(15)
+							.m-share-link
+								max-width: rem(32)
+
+// Modal-add End
+
+// Adds Start
+
+.adds
+	padding: rem(30) 0
+	background-color: #F2F2F2
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5)
+	.container
+		.row
+			.h2
+				width: 100%
+				text-align: center
+				margin-bottom: rem(5)
+			.title
+				font-family: $h-font
+				font-size: rem(36)
+				line-height: rem(42)
+				font-weight: bold
+				width: 100%
+				color: $accent
+				text-align: center
+				margin-bottom: rem(40)
+			.adds-line
+				display: flex
+				justify-content: space-between
+				width: 100%
+				margin-bottom: rem(30)
+				.adds-box
+					border-radius: 5px
+					background-color: #FFFFFF
+					box-shadow: 0 0 rem(20) 0 rgba(0,0,0,0.2)
+					max-width: rem(270)
+					padding: rem(15)
+					.adds-img
+						width: rem(200)
+						margin: 0 auto
+						margin-bottom: rem(20)
+					.adds-name
+						font-family: $h-font
+						font-weight: bold
+						font-size: rem(14)
+						line-height: rem(14)
+						margin-bottom: rem(10)
+					.adds-text
+						font-size: rem(14)
+						line-height: rem(18)
+						margin-bottom: rem(10)
+					.adds-prise
+						.price
+							font-family: $h-font
+							font-size: rem(28)
+							font-weight: 500
+							color: $accent
+							text-align: center
+							margin-bottom: rem(15)
+							span
+								font-size: rem(14)
+								color: $grey
+					.adds-btn
+						height: rem(40)
+
+// Adds End
+
+// Footer Start
+
+.footer
+	background-color: $accent
+	padding: rem(40) 0 rem(30)
+	.container
+		.row
+			.footer-logo
+			.footer-contacts, .footer-time, .footer-social, .footer-consultation
+				color: #FFFFFF
+				.f-title
+					font-size: rem(18)
+					line-height: rem(21)
+				.cont-box
+					.cont-item
+						display: flex
+						img
+							width: rem(16)
+							height: rem(16)
+							margin-right: rem(10)
+						.cont
+							font-size: rem(14)
+							line-height: rem(16)
+							margin-bottom: rem(13)
+						a
+							color: #FFFFFF
+			.footer-social
+				.f-soc-box
+					display: flex
+					.soc-item
+						margin-right: rem(10)
+						&:last-child
+							margin: 0
+			.footer-consultation
+				.f-title
+					font-weight: bold
+					text-align: center
+					margin: rem(20) 0
+				.f-btn
+					color: $green
+					font-size: rem(14)
+					font-weight: bold
+					background-color: #FFF
+					&:hover
+						background-color: darken(#FFFFFF, 10%)
+
+
+// Footer End
