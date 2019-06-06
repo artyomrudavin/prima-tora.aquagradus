@@ -182,11 +182,11 @@ $(function() {
 // Carusel
 
 $(function() {
-	$('#car-all, #car-zavod, #car-team, #car-polza, #rev-carusel').carousel({
+	$('#car-all, #car-zavod, #car-team, #car-polza, #rev-carusel, #video-instr').carousel({
 		touch: true
 	})
 
-	$("#car-all, #car-zavod, #car-team, #car-polza, #rev-carusel").swipe({
+	$("#car-all, #car-zavod, #car-team, #car-polza, #rev-carusel, #video-instr").swipe({
 
 		swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
 
@@ -274,7 +274,13 @@ $(function() {
 	    	$('.icon').toggleClass('active');
 	    	var menu = $('#menu');
 	    	menu.slideToggle();
-	    };	    
+	    };
+
+	    $('.icon').toggleClass('active');
+
+		var menu = $('#menu');
+
+		menu.slideToggle();  
 	}
 	    return false; // выключаем стандартное действие
 	});
@@ -312,9 +318,42 @@ $(function() {
 				// Done Functions
 				th.trigger("reset");
 			}, 500);
-			location.href = "https://kolonna-samogon.com.ua/sps";
+			location.href = "https://prima-tora.com.ua/sps";
 		});
 		return false;
 	});
+
+});
+
+// Burger bar
+
+$(function() {
+	
+	$('.icon').on('click', function(e) {
+		e.preventDefault();
+
+		$('.icon').toggleClass('active');
+
+		var menu = $('#menu');
+
+		menu.slideToggle();
+	});
+
+});
+
+// Carusel Off
+
+$(function() {
+
+	var carInner = $('#video-instr-car').find('[data-item="item"]');
+	// var carData = $('[data-item="item"]');
+	console.log('carInner: ', carInner);
+	// console.log('carData: ', carData);
+
+	if ( $(window).width() > 767 ) {
+		
+		carInner.addClass('active');
+
+	}
 
 });

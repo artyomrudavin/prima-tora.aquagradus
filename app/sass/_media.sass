@@ -24,6 +24,28 @@
 // ≤768px
 +media-breakpoint-up(md)
 
+	.h2
+		font-size: rem(36)
+		line-height: rem(44)
+
+	.modal
+		.modal-dialog
+			.modal-box, .modal-content
+				padding: rem(40) rem(60)
+				.close
+					display: block
+					span
+				.modal-h
+					font-size: rem(36)
+					line-height: rem(42)
+					font-weight: bold
+				.modal-title
+					font-size: rem(24)
+					line-height: rem(32)
+					margin-bottom: rem(30)
+				.form-group
+				.form-item
+
 	header
 		.nav-sticky
 			.navbar-desctop
@@ -31,6 +53,7 @@
 			.navbar-mobile
 				display: none
 		.header-wellcome
+			background: url(../img/header/bg-1.png) 50% 50% no-repeat
 			padding-top: rem(90)
 			padding-bottom: rem(60)
 			.container
@@ -89,6 +112,210 @@
 					img
 					p
 
+
+	.video-plant
+		.container
+			padding-top: rem(30)
+			padding-bottom: rem(30)
+			.row
+				.video
+					.video-container
+				.text
+					padding: rem(50) rem(40) rem(40) rem(20)
+					.h2
+						font-size: rem(36)
+						line-height: rem(46)
+						margin-bottom: rem(20)
+					.cta
+						font-size: rem(24)
+						line-height: rem(32)
+
+	.specification
+		padding-top: rem(30)
+		padding-bottom: rem(50)
+		.container
+			.row
+				.h2
+					margin-bottom: rem(30)
+			.row
+				.spec-img
+					.tab-img
+				.spaec-details
+					.spaec-details-box
+						padding: rem(25)
+						border: 4px solid $light-blue
+						.tabs
+							.title
+								font-size: rem(24)
+								line-height: rem(29)
+							.tabs-container
+								margin-bottom: rem(30)
+								.tab
+									.tablink
+										height: rem(42)
+										width: rem(120)
+										line-height: rem(42)
+										font-weight: bold
+						.title
+						ul
+							li
+								flex-direction: row
+								align-items: flex-end
+								&:last-child
+									margin-bottom: 0
+								.label
+								.separator
+								.valey
+								.tab-kg
+				.spaec-tips
+					.tips-box
+						padding: rem(25)
+						margin-bottom: 0
+						li
+							i
+							p
+					.product-box
+						padding: rem(20) rem(15)
+						.title
+						.tab-product
+							li
+								.label
+								.separator
+								.tab-speac
+
+	.akciya
+		padding-top: rem(60)
+		.container
+			.akciya-box
+				box-shadow: 0 0 rem(48) 0 rgba(0,0,0,0.2)
+				margin-bottom: rem(60)
+				.h2
+					font-size: rem(24)
+					padding: rem(30)
+					padding-bottom: 0
+					margin-bottom: 0
+					line-height: initial
+				.akciya-present
+					flex-direction: row
+					padding: rem(30)
+					.akciya-img
+						margin-right: rem(30)
+						flex: 0 1 rem(255)
+						margin-bottom: 0
+						img
+						.title
+					.akciya-timer
+						.timer-title
+						.timer
+							justify-content: center
+							.timer-points, .delimiter
+								font-size: rem(88)
+								line-height: rem(90)
+							.timer-points
+								min-width: rem(110)
+							.timer-text
+							.delimiter
+								display: block
+				.akciya-form
+					flex-direction: row
+					padding: rem(25) rem(30) rem(35)
+					margin: 0
+					border-radius: initial
+					input
+						margin-bottom: 0
+					.btn-orange
+
+	.video-instructions
+		.container
+			.row
+		 		.h2
+		 		.carousel
+		 			.carousel-inner
+		 			.carousel-indicators
+		 				display: none
+
+	.catalog
+		padding-top: rem(50)
+		padding-bottom: rem(30)
+		.container
+			.row
+				.h2
+					margin-bottom: rem(20)
+				.catalog-box
+					flex-direction: row
+					padding: rem(30)
+					margin: 0
+					.cat-img-container
+						.cat-img
+						img
+					.cat-choise
+						.cat-choise-complect
+							padding-bottom: rem(40)
+							.tabs
+								.title
+									font-size: rem(24)
+									margin-bottom: rem(20)
+								.cat-tabs-container
+									.cat-tab
+										.cat-tablink
+											width: rem(126)
+							.cat-price
+								.price
+									.pr-desc
+										display: block
+										font-size: rem(24)
+										font-weight: bold
+										margin: 0
+										margin-bottom: rem(15)
+									.cat-price-item
+										height: rem(43)
+										flex-wrap: nowrap
+										.pr-mob
+											display: none
+										.cat-price-container
+											margin-bottom: 0
+											width: 100%
+											.new-price
+											.old-price
+										.btn-cat
+											margin: 0
+						.catalog-title
+							margin-bottom: rem(20)
+						.cat-choise-single
+							flex-direction: row
+							.cat-tank-container
+								.tank-title
+								.cat-tank-tabs
+									.cat-tank-img
+										justify-content: initial
+										.tank-img
+											img
+										.cat-tank-tab
+											.tank-tab
+												.tank-tablink	
+									.cat-tank-price
+										max-width: rem(165)
+										.price-tank
+											.price
+												span
+											.btn-tank
+							.cat-col-container
+								.col-title
+								.col-box
+									.col-img
+										img
+									.price-col
+										.price
+											span
+										.btn-col
+					.cat-complect
+						.title
+						ul
+							li
+								img
+								p
+
+										
 
 // ≤992px
 +media-breakpoint-up(lg)

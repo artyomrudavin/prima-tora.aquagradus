@@ -76,10 +76,43 @@ button:focus
 
 .h2
 	font-family: $h-font
-	font-size: rem(36)
-	font-weight: bold
-	line-height: rem(44)
-	width: 100%
+	font-size: rem(18)
+	line-height: rem(22)
+
+// Carusel Control
+
+.carousel-control
+	display: flex
+	justify-content: center
+	.carousel-control-prev,
+	.carousel-control-next
+		margin: 0 rem(20)
+		width: rem(50)
+		height: rem(50)
+		opacity: 1
+		position: initial
+		background: url(../img/review/arrow-inactive.png) no-repeat
+		background-size: contain
+		&:hover
+			background: url(../img/review/arrow-active.png) no-repeat
+			background-size: contain
+	.carousel-control-next
+		transform: rotate(180deg)
+
+// Carusel Indicators
+
+.carousel-indicators
+	position: initial
+	li
+		position: relative
+		width: rem(40)
+		height: rem(9)
+		margin: 0 rem(3)
+		background-color: #fff
+		border: 1px solid $accent
+		border-radius: 5px
+		&.active
+			background-color: $accent
 
 // Modal Start
 
@@ -89,8 +122,9 @@ button:focus
 			position: relative
 			background-color: #FFFFFF
 			border-radius: 5px
-			padding: rem(40) rem(60)
+			padding: rem(20) rem(15)
 			.close
+				display: none
 				position: absolute
 				right: 0
 				top: 0
@@ -106,17 +140,17 @@ button:focus
 					padding: 0 rem(23)
 			.modal-h
 				color: $accent
-				font-size: rem(36)
-				font-weight: bold
-				line-height: rem(42)
+				font-size: rem(18)
+				line-height: rem(26)
+				font-weight: 500
 				text-align: center
 				margin-bottom: rem(20)
 			.modal-title
-				font-size: rem(24)
+				font-size: rem(18)
+				line-height: rem(26)
 				font-weight: 500
-				line-height: rem(32)
 				text-align: center
-				margin-bottom: rem(30)
+				margin-bottom: rem(20)
 			.form-group
 				display: flex
 				flex-direction: column
@@ -287,9 +321,64 @@ header
 					p
 						margin: 0
 		.navbar-mobile
-			height: rem(60)
+			// height: rem(60)
+			padding: rem(5) rem(15)
+			.mob-box
+				display: flex
+				align-items: center
+				.icon
+					position: relative
+					width: rem(40)
+					height: rem(50)
+					cursor: pointer
+					margin-right: rem(30)
+					.hamburger
+						width: rem(30)
+						height: rem(2)
+						background-color: $accent
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						box-shadow: 0 1px 2px rgba(0,0,0,.2)
+						transition: .1s
+					.hamburger:before, .hamburger:after
+						content: ""
+						width: rem(30)
+						height: rem(2)
+						background-color: $accent
+						position: absolute
+						box-shadow: 0 1px 2px rgba(0,0,0,.2)
+						transition: .3s
+					.hamburger:before
+						top: rem(-8)
+					.hamburger:after
+						top: rem(8)
+					&.active
+						.hamburger
+							background-color: rgba(0,0,0,0)
+							box-shadow: 0 1px 2px rgba(0,0,0,0)
+					&.active
+						.hamburger:before
+							top: 0
+							transform: rotate(45deg)
+					&.active
+						.hamburger:after
+							top: 0
+							transform: rotate(135deg)
+				.header-logo
+				.header-phone-btn
+					margin-left: rem(30)
+			#menu
+				display: none
+				li
+					a
+						display: block
+						text-align: center
+						padding: rem(5) 0
+						border-bottom: 1px solid $grey
+						color: $text
 	.header-wellcome
-		background: url(../img/header/bg-1.png) 50% 50% no-repeat
 		padding-top: rem(80)
 		padding-bottom: rem(30)
 		.container
@@ -457,6 +546,8 @@ header
 			.tips-container
 				display: flex
 				flex-direction: row
+				align-items: center
+				margin-bottom: rem(15)
 				img
 					flex: 0 0 auto
 					width: rem(64)
@@ -466,6 +557,7 @@ header
 					font-size: rem(18)
 					font-weight: 500
 					line-height: rem(24)
+					margin: 0
 
 // Tips End
 
@@ -475,7 +567,8 @@ header
 	.container
 		border-top: 1px solid $grey
 		border-bottom: 1px solid $grey
-		padding: rem(30) 0
+		padding-top: rem(20)
+		padding-bottom: rem(20)
 		.row
 			.video
 				.video-container
@@ -483,54 +576,53 @@ header
 					.embed-responsive
 						border-radius: 15px
 			.text
-				padding: rem(50) rem(40) rem(40) rem(20)
 				.h2
-					font-size: rem(36)
-					line-height: rem(46)
-					margin-bottom: rem(20)
+					font-size: rem(18)
+					line-height: rem(24)
+					margin-bottom: rem(10)
 				.cta
 					font-family: $h-font
-					font-size: rem(24)
+					font-size: rem(14)
+					line-height: rem(18)
 					font-weight: bold
-					line-height: rem(32)
 
 // Video-plant End
 
 // Specification Start
 
-.spaec-details-box,
 .tips-box,
 .product-box
 	border: 4px solid $light-blue
 
 .specification
-	padding-top: rem(30)
-	padding-bottom: rem(50)
+	padding-top: rem(20)
+	padding-bottom: rem(20)
 	.container
 		.row
 			.h2
 				text-align: center
-				margin-bottom: rem(30)
+				margin-bottom: rem(20)
 		.row
 			.spec-img
 				.tab-img
 					display: none
 					&.active
 						display: block
+					img
+						margin: 0 auto
 			.spaec-details
 				.spaec-details-box
-					padding: rem(25)
 					.tabs
 						.title
 							font-family: $h-font
-							font-size: rem(24)
+							font-size: rem(18)
+							line-height: rem(22)
 							font-weight: bold
-							line-height: rem(29)
 						.tabs-container
 							display: flex
 							width: 100%
 							justify-content: space-between
-							margin-bottom: rem(30)
+							margin-bottom: rem(15)
 							.tab
 								&.active
 									.tablink
@@ -539,14 +631,14 @@ header
 								.tablink
 									display: block
 									font-size: rem(14)
-									height: rem(42)
-									width: rem(120)
-									line-height: rem(42)
+									height: rem(34)
+									width: rem(84)
+									line-height: rem(34)
+									font-weight: 500
 									border: 2px solid $accent
 									border-radius: 5px
 									background-color: #FFFFFF
 									color: #444
-									font-weight: bold
 									text-align: center
 									&:hover
 										text-decoration: none
@@ -560,13 +652,14 @@ header
 					ul
 						li
 							display: flex
+							flex-direction: column
 							width: 100%
 							justify-content: space-between
 							font-size: rem(14)
 							margin-bottom: rem(15)
-							align-items: flex-end
+							// align-items: flex-end
 							&:last-child
-								margin-bottom: 0
+								// margin-bottom: 0
 							.label
 								flex: 0 0 auto
 								font-weight: bold
@@ -585,7 +678,8 @@ header
 				flex-direction: column
 				justify-content: space-between
 				.tips-box
-					padding: rem(25)
+					padding: rem(25) rem(10)
+					margin-bottom: rem(20)
 					li
 						display: flex
 						margin-bottom: rem(15)
@@ -612,7 +706,7 @@ header
 						i
 							background: center/contain url(../img/specification/construction-and-tools.png) no-repeat
 				.product-box
-					padding: rem(20) rem(15)
+					padding: rem(20) rem(10)
 					.title
 						font-family: $h-font
 						font-size: rem(18)
@@ -663,32 +757,26 @@ header
 // Akciya Start
 
 .akciya
-	padding-top: rem(60)
+	padding-top: rem(20)
 	.container
 		.akciya-box
 			background-color: #FFFFFF
-			box-shadow: 0 0 rem(48) 0 rgba(0,0,0,0.2)
-			margin-bottom: rem(60)
+			margin-bottom: rem(20)
 			border-radius: 9px
 			overflow: hidden
 			.h2
-				font-size: rem(24)
-				padding: rem(30)
-				padding-bottom: 0
-				margin-bottom: 0
-				line-height: initial
 			.akciya-present
 				display: flex
-				flex-direction: row
-				padding: rem(30)
+				flex-direction: column
 				width: 100%
+				padding: rem(15)
 				.akciya-img
 					border: 1px solid #7BCCF0
 					border-radius: 5px
 					max-height: rem(182)
 					padding: rem(20)
-					margin-right: rem(30)
-					flex: 0 1 rem(255)
+					flex: 0 1 auto
+					margin-bottom: rem(15)
 					img
 						max-width: rem(120)
 						margin: 0 auto
@@ -711,24 +799,28 @@ header
 						margin-bottom: rem(7)
 					.timer
 						display: flex
-						justify-content: center
+						justify-content: space-around
 						width: 100%
 						color: #FFFFFF
 						.timer-points, .delimiter
-							font-size: rem(88)
+							font-size: rem(60)
+							line-height: rem(71)
 							font-weight: bold
-							line-height: rem(90)
 						.timer-points
-							min-width: rem(110)
+							min-width: rem(65)
 						.timer-text
 							font-size: rem(18)
 							line-height: initial
-
+						.delimiter
+							display: none
 			.akciya-form
 				display: flex
-				flex-direction: row
+				flex-direction: column
 				background-color: $orange
-				padding: rem(25) rem(30) rem(35)
+				padding: rem(15)
+				width: 100%
+				margin: 0 rem(15)
+				border-radius: 0 0 9px 9px
 				input
 					height: rem(44)
 					border: 1px solid #FFFFFF
@@ -740,6 +832,7 @@ header
 					margin-right: rem(30)
 					width: 100%
 					max-width: rem(340)
+					margin-bottom: rem(15)
 				.btn-orange
 					border: 3px solid #FFFFFF
 
@@ -755,31 +848,35 @@ header
 		 	.h2
 		 		text-align: center
 		 		margin-bottom: rem(30)
-		 	.row
-		 		.video-container
-		 			margin-bottom: rem(15)
-		 			border-radius: 9px
-		 			overflow: hidden
-		 			position: relative
-					.plh-video
-						cursor: pointer
-					.btn-video
-						position: absolute
-						width: rem(126)
-						height: rem(126)
-						background: top url(../img/video-instructions/play-1.png) no-repeat
-						top: 50%
-						left: 50%
-						transform: translate(-50%, -50%)
-						cursor: pointer
-						z-index: 50
-						&:hover
-							background: bottom url(../img/video-instructions/play-1.png) no-repeat
-		 		.title
-		 			font-family: $h-font
-		 			font-size: rem(18)
-		 			font-weight: bold
-		 			line-height: rem(24)
+		 	.carousel
+		 		.carousel-inner
+		 			margin: 0
+		 			.carousel-item
+			 			.video-container
+					 		margin-bottom: rem(15)
+					 		border-radius: 9px
+					 		overflow: hidden
+					 		position: relative
+							.plh-video
+								cursor: pointer
+							.btn-video
+								position: absolute
+								width: rem(126)
+								height: rem(126)
+								background: top url(../img/video-instructions/play-1.png) no-repeat
+								top: 50%
+								left: 50%
+								transform: translate(-50%, -50%)
+								cursor: pointer
+								z-index: 50
+								&:hover
+									background: bottom url(../img/video-instructions/play-1.png) no-repeat
+					 	.title
+					 		font-family: $h-font
+					 		font-size: rem(18)
+					 		font-weight: bold
+					 		line-height: rem(24)
+					 		min-height: rem(72)
 
 // Video-instructions End
 
@@ -787,20 +884,22 @@ header
 
 .catalog
 	background-color: $accent
-	padding-top: rem(50)
-	padding-bottom: rem(30)
+	padding-top: rem(15)
+	padding-bottom: rem(15)
 	.container
 		.row
 			.h2
 				color: #FFFFFF
-				margin-bottom: rem(20)
+				margin-bottom: rem(10)
 				text-align: center
 			.catalog-box
 				display: flex
+				flex-direction: column
 				background-color: #FFFFFF
 				box-shadow: 0 0 rem(48) 0 rgba(0,0,0,0.3)
 				border-radius: 9px
-				padding: rem(30)
+				padding: rem(10)
+				margin: rem(15)
 				width: 100%
 				.cat-img-container
 					.cat-img
@@ -812,15 +911,15 @@ header
 						margin: 0 auto
 				.cat-choise
 					.cat-choise-complect
-						padding-bottom: rem(40)
+						padding-bottom: rem(20)
 						margin-bottom: rem(30)
 						border-bottom: 2px solid #D8D8D8
 						.tabs
 							.title
 								font-family: $h-font
-								font-size: rem(24)
+								font-size: rem(14)
+								margin-bottom: rem(10)
 								font-weight: bold
-								margin-bottom: rem(20)
 							.cat-tabs-container
 								display: flex
 								width: 100%
@@ -835,7 +934,7 @@ header
 										display: block
 										font-size: rem(14)
 										height: rem(42)
-										width: rem(130)
+										width: rem(75)
 										line-height: rem(42)
 										border: 2px solid $accent
 										border-radius: 5px
@@ -849,22 +948,26 @@ header
 											color: #FFFFFF
 						.cat-price
 							.price
-								p
-									font-size: rem(24)
-									font-weight: bold
+								.pr-desc
+									display: none
 								.cat-price-item
 									display: none
+									flex-wrap: wrap
 									justify-content: space-between
+									align-items: center
+									height: 100%
 									color: #4F4444
 									font-weight: bold
 									font-size: rem(18)
-									height: rem(43)
 									line-height: rem(43)
 									&.active
 										display: flex
+									.pr-mob
+										font-size: rem(14)
+										margin: 0
 									.cat-price-container
 										display: flex
-										width: 100%
+										margin-bottom: rem(10)
 										.new-price
 											color: $green
 											font-size: rem(40)
@@ -885,13 +988,17 @@ header
 												top: 0
 												left: 40%
 												transform: rotate(32deg)
+									.btn-cat
+										// margin-left: rem(-10)
 					.catalog-title
 						font-family: $h-font
 						font-size: rem(18)
+						line-height: rem(22)
 						font-weight: bold
-						margin-bottom: rem(20)
+						margin-bottom: rem(10)
 					.cat-choise-single
 						display: flex
+						flex-direction: column
 						justify-content: space-between
 						width: 100%
 						.cat-tank-container
@@ -901,16 +1008,44 @@ header
 								margin-bottom: rem(10)
 							.cat-tank-tabs
 								.cat-tank-img
+									display: flex
+									justify-content: space-between
+									margin-bottom: rem(10)
 									.tank-img
 										display: none
 										padding: rem(20)
 										border: 1px solid $grey
 										border-radius: 5px
-										margin-bottom: rem(10)
+										margin-right: rem(10)
 										&.active
 											display: block
 										img
 											width: rem(125)
+											margin: 0 auto
+									.cat-tank-tab
+										display: flex
+										flex-direction: column
+										justify-content: space-between
+										.tank-tab
+											&.active
+												.tank-tablink
+													background-color: $accent
+													color: #FFFFFF
+											.tank-tablink
+												display: block
+												font-size: rem(14)
+												height: rem(40)
+												width: rem(50)
+												line-height: rem(40)
+												border: 2px solid $accent
+												border-radius: 5px
+												background-color: #FFFFFF
+												color: $accent
+												text-align: center
+												&:hover
+													text-decoration: none
+													background-color: $accent
+													color: #FFFFFF	
 								.cat-tank-price
 									.price-tank
 										display: none
@@ -934,32 +1069,6 @@ header
 											&:hover
 												background-color: $orange
 												color: #FFFFFF
-						.cat-tank-tab
-							display: flex
-							flex-direction: column
-							justify-content: space-between
-							padding-top: rem(33)
-							padding-bottom: rem(100)
-							.tank-tab
-								&.active
-									.tank-tablink
-										background-color: $accent
-										color: #FFFFFF
-								.tank-tablink
-									display: block
-									font-size: rem(14)
-									height: rem(40)
-									width: rem(50)
-									line-height: rem(40)
-									border: 2px solid $accent
-									border-radius: 5px
-									background-color: #FFFFFF
-									color: $accent
-									text-align: center
-									&:hover
-										text-decoration: none
-										background-color: $accent
-										color: #FFFFFF
 						.cat-col-container
 							.col-title
 								font-size: rem(14)
@@ -973,6 +1082,7 @@ header
 									margin-bottom: rem(10)
 									img
 										width: rem(125)
+										margin: 0 auto
 								.price-col
 									.price
 										font-family: $h-font
@@ -1485,7 +1595,7 @@ header
 header
 	// display: none
 .tips
-	// display: none Доделать не равномерно
+	// display: none
 .video-plant
 	// display: none
 .specification
@@ -1497,18 +1607,18 @@ header
 .catalog
 	// display: none
 .book
-	// display: none
+	display: none
 .gallery
-	// display: none
+	display: none
 .review
-	// display: none
+	display: none
 .adds
-	// display: none
+	display: none
 .about
-	// display: none
+	display: none
 .faq
-	// display: none
+	display: none
 .footer
-	// display: none
+	display: none
 
 @import "media" // Always at the end

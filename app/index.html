@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- <base href="/"> -->
-		<title>AquaGradus Prima Tora</title>
+		<title>AquaGradus Прима Тора Самогонный аппарат</title>
 		<meta name="description" content="">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -47,7 +47,25 @@
 					</div>
 				</div>
 				<div class="navbar-mobile">
-					<p>1111</p>
+					<div class="mob-box">
+						<div class="icon" id="burg">
+							<div class="hamburger"></div>
+						</div>
+						<div class="header-logo">
+							<a href="#"><img src="img/Logo/AquaGradusEng1-1.png" alt="aquagradus лого" class="img-responsive"></a>
+						</div>
+						<a href="#" class="header-phone-btn" data-toggle="modal" data-target="#header-call">
+							<img src="img/header/phone-button.png" alt="Обратный звонок" class="img-responsive">
+						</a>
+					</div>
+					<ul id="menu" class="header-nav">
+						<li><a href="#specification">Характеристики</a></li>
+						<li><a href="#catalog">Продукция</a></li>
+						<li><a href="#gallery">Галерея</a></li>
+						<li><a href="#review">Отзывы</a></li>
+						<li><a href="#about">Как мы работаем?</a></li>
+						<li><a href="#footer">Контакты</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="header-wellcome">
@@ -163,16 +181,16 @@
 		<section class="video-plant">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 video">
+					<div class="col-md-4 text order-md-2">
+						<h2 class="h2">Видео - экскурсия по фабрике AquaGradus™</h2>
+						<p class="cta">Посмотрите короткое видео и узнайте как выглядит производство изнутри</p>
+					</div>
+					<div class="col-md-8 video order-md-1">
 						<div class="video-container">
 							<div class="embed-responsive embed-responsive-16by9">
 								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J4hHh8Qp55M"></iframe>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 text">
-						<h2 class="h2">Видео - экскурсия по фабрике AquaGradus™</h2>
-						<p class="cta">Посмотрите короткое видео и узнайте как выглядит производство изнутри</p>
 					</div>
 				</div>
 			</div>
@@ -383,7 +401,7 @@
 							</div>
 						</div>
 					</div>
-					<form method="post" class="col-12 akciya-form" id="akciya-form">
+					<form method="post" class="akciya-form" id="akciya-form">
 						<!-- hidden -->
 						<input type="hidden" name="DATA[TITLE]" value="Новый лид: Аппарат - Прима; Форма - Первый экран">
 						<input type="hidden" name="DATA[SOURCE_ID]" value="Веб-сайт Прима">
@@ -399,28 +417,35 @@
 			<div class="container">
 				<div class="row">
 					<h2 class="h2">AquaGradus™ Видео-инструкции</h2>
-					<div class="row">
-						<div class="col-md-4">
-							<div class="video-container" data-toggle="modal" data-target="#obzor-instr">
-								<img src="img/video-instructions/obzor.jpg" alt="" class="img-responsive embed-responsive embed-responsive-16by9 plh-video">
-								<div class="btn-video"></div>
+					<div class="carousel slide" id="video-instr" data-ride="carousel">
+						<div class="row carousel-inner" id="video-instr-car">
+							<div class="col-md-4 carousel-item active" data-item="item">
+								<div class="video-container" data-toggle="modal" data-target="#obzor-instr">
+									<img src="img/video-instructions/obzor.jpg" alt="" class="img-responsive embed-responsive embed-responsive-16by9 plh-video">
+									<div class="btn-video"></div>
+								</div>
+								<p class="title">Что вы получаете при заказе? Видео- распаковка аппарата</p>
 							</div>
-							<p class="title">Что вы получаете при заказе? Видео- распаковка аппарата</p>
-						</div>
-						<div class="col-md-4">
-							<div class="video-container" data-toggle="modal" data-target="#first-instr">
-								<img src="img/video-instructions/pervaya.jpg" alt="" class="img-responsive embed-responsive embed-responsive-16by9 plh-video">
-								<div class="btn-video"></div>
+							<div class="col-md-4 carousel-item" data-item="item">
+								<div class="video-container" data-toggle="modal" data-target="#first-instr">
+									<img src="img/video-instructions/pervaya.jpg" alt="" class="img-responsive embed-responsive embed-responsive-16by9 plh-video">
+									<div class="btn-video"></div>
+								</div>
+								<p class="title">Подготовка аппарата к работе и первая перегонка</p>
 							</div>
-							<p class="title">Подготовка аппарата к работе и первая перегонка</p>
-						</div>
-						<div class="col-md-4">
-							<div class="video-container" data-toggle="modal" data-target="#second-instr">
-								<img src="img/video-instructions/vtoraya.jpg" alt="" class="img-responsive embed-responsive embed-responsive-16by9 plh-video">
-								<div class="btn-video"></div>
+							<div class="col-md-4 carousel-item" data-item="item">
+								<div class="video-container" data-toggle="modal" data-target="#second-instr">
+									<img src="img/video-instructions/vtoraya.jpg" alt="" class="img-responsive embed-responsive embed-responsive-16by9 plh-video">
+									<div class="btn-video"></div>
+								</div>
+								<p class="title">2я перегонка, получение чистейшего дистиллята без особых усилий</p>
 							</div>
-							<p class="title">2я перегонка, получение высокоградусного чистейшего дистиллята без особых усилий</p>
 						</div>
+						<ol class="carousel-indicators">
+							<li data-target="#car-all" data-slide-to="0" class="active"></li>
+							<li data-target="#car-all" data-slide-to="1"></li>
+							<li data-target="#car-all" data-slide-to="2"></li>
+						</ol>
 					</div>
 				</div>
 			</div>
@@ -480,20 +505,23 @@
 								</div>
 								<div class="cat-price">
 									<ul class="price">
-										<p>Цена:</p>
+										<p class="pr-desc">Цена:</p>
 										<li class="cat-price-item active">
+											<p class="pr-mob">Цена:</p>
 											<div class="cat-price-container">
 												<span class="new-price">6 830₴</span> <span class="old-price">7 530₴ </span>
 											</div>
 											<button class="btn btn-orange btn-cat" data-toggle="modal" data-target="#primaTwen">купить аппарат</button>
 										</li>
 										<li class="cat-price-item">
+											<p class="pr-mob">Цена:</p>
 											<div class="cat-price-container">
 												<span class="new-price">7 330₴</span> <span class="old-price">8 030₴ </span>
 											</div>
 											<button class="btn btn-orange btn-cat" data-toggle="modal" data-target="#primaThird">купить аппарат</button>
 										</li>
 										<li class="cat-price-item">
+											<p class="pr-mob">Цена:</p>
 											<div class="cat-price-container">
 												<span class="new-price">7 830₴</span> <span class="old-price">8 530₴ </span>
 											</div>
@@ -592,6 +620,17 @@
 													<img src="img/catalog/50l-size.png" alt="Емкость AquaGradus™ 50 литров" class="img-responsive modal-content">
 												</div>
 											</div>
+											<div class="cat-tank-tab">
+												<div class="tank-tab active">
+													<a href="#" class="tank-tablink">25 л</a>
+												</div>
+												<div class="tank-tab">
+													<a href="#" class="tank-tablink">35 л</a>
+												</div>
+												<div class="tank-tab">
+													<a href="#" class="tank-tablink">50 л</a>
+												</div>
+											</div>
 										</div>
 										<div class="cat-tank-price">
 											<div class="price-tank active">
@@ -607,17 +646,6 @@
 												<button class="btn btn-orange btn-tank" data-toggle="modal" data-target="#kubFift">купить</button>
 											</div>
 										</div>
-									</div>
-								</div>
-								<div class="cat-tank-tab">
-									<div class="tank-tab active">
-										<a href="#" class="tank-tablink">25 л</a>
-									</div>
-									<div class="tank-tab">
-										<a href="#" class="tank-tablink">35 л</a>
-									</div>
-									<div class="tank-tab">
-										<a href="#" class="tank-tablink">50 л</a>
 									</div>
 								</div>
 								<div class="cat-col-container">
