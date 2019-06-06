@@ -46,6 +46,40 @@
 				.form-group
 				.form-item
 
+	.modal
+		.modal-dialog
+			&.modal-full
+			.adds-modal-content
+				padding: rem(20)
+				.container-fluid
+					.row
+						.m-tab-img
+							.m-tab-imgbox
+								.m-img
+							.m-tab-box
+								.m-tab-link
+						.m-text
+							.close
+								top: rem(-25)
+								right: rem(-25)
+								bottom: initial
+							.title
+							.mark-box
+								.m-rev-mark
+								.m-rev-mark-text
+							.m-text-about
+								p
+							.m-buy-box
+								.price-text
+								.price
+							.m-adds-form
+								flex-direction: row
+								margin-bottom: 0
+								.form-item
+							.m-share-box
+								.text-share
+								.m-share-link
+
 	header
 		.nav-sticky
 			.navbar-desctop
@@ -309,13 +343,95 @@
 											span
 										.btn-col
 					.cat-complect
+						border-left: 2px solid #D8D8D8
+						padding-left: rem(25)
 						.title
 						ul
+							flex-direction: column
 							li
+								flex-direction: row
+								margin-bottom: rem(45)
+								width: 100%
 								img
+									margin-right: rem(30)
+									margin-bottom: 0
 								p
+									font-size: rem(18)
+									line-height: rem(22)
+									text-align: left
 
-										
+	.book
+		padding-top: rem(60)
+		.container
+			.row
+				.book-form-box
+					padding-bottom: rem(105)
+					.h2
+						text-align: left
+					.book-title
+						font-size: rem(24)
+						line-height: rem(28)
+						margin-bottom: rem(30)
+						text-align: left
+					.book-form
+						padding: rem(30) rem(20)
+						margin: initial
+						.book-form-title
+							margin-bottom: rem(30)
+						.book-form-group
+							.b-form-item
+								margin-bottom: rem(20)
+						.book-police
+				.book-book
+					display: flex
+
+	.review
+		padding-top: rem(60)
+		padding-bottom: rem(60)
+		.container
+			.row
+				.h2
+					margin-bottom: rem(30)
+				.carousel
+					.carousel-inner
+						margin-bottom: rem(30)
+						.carousel-item
+							.row
+								.rev-video
+									.rev-video-container
+										padding: initial
+										.rev-video-caption
+											position: absolute
+											background-color: rgba(255,255,255,.7)
+											.caption-t
+								.rev-photo
+									display: flex
+
+	.adds
+		.container
+			.row
+				.h2
+				.title
+					font-size: rem(36)
+					line-height: rem(42)
+					margin-bottom: rem(40)
+				.carousel-inner
+					display: flex
+					flex-wrap: wrap
+					.carousel-item
+						max-width: 50%
+						.carusel-box
+							flex-direction: row
+							.adds-box
+								.adds-img
+								.adds-name
+								.adds-text
+								.adds-prise
+									.price
+										span
+								.adds-btn
+				.carousel-indicators
+					display: none
 
 // ≤992px
 +media-breakpoint-up(lg)
