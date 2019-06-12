@@ -312,7 +312,7 @@ header
 					text-align: center
 					vertical-align: middle
 					color: #fff
-					margin-left: rem(-15)
+					// margin-left: rem(-15)
 					padding: 0 rem(11)
 					&:hover
 						text-decoration: none
@@ -323,12 +323,18 @@ header
 					font-weight: 500
 					p
 						margin: 0
+						a
+							color: $text
+							&:hover
+								text-decoration: none
 		.navbar-mobile
 			// height: rem(60)
 			padding: rem(5) rem(15)
+			width: 100%
 			.mob-box
 				display: flex
 				align-items: center
+				justify-content: space-between
 				.icon
 					position: relative
 					width: rem(40)
@@ -370,8 +376,12 @@ header
 							top: 0
 							transform: rotate(135deg)
 				.header-logo
+					img
+						max-height: rem(55)
 				.header-phone-btn
 					margin-left: rem(30)
+					img
+						max-height: rem(55)
 			#menu
 				display: none
 				li
@@ -910,7 +920,7 @@ header
 						&.active
 							display: block
 					img
-						max-width: 95%
+						max-width: 60%
 						margin: 0 auto
 				.cat-choise
 					.cat-choise-complect
@@ -1287,6 +1297,7 @@ header
 				margin-bottom: rem(10)
 				width: 100%
 			.carousel
+				width: 100%
 				.carousel-inner
 					margin-bottom: rem(10)
 					.carousel-item
@@ -1484,12 +1495,14 @@ header
 // Faq Start
 
 .faq
-	padding: rem(60) 0 rem(50)
+	padding-top: rem(20)
+	padding-bottom: rem(20)
 	.container
 		.row
 			.h2
 				text-align: center
-				margin-bottom: rem(30)
+				margin-bottom: rem(10)
+				width: 100%
 			.faq-accord
 				.accordeon
 					.card
@@ -1503,6 +1516,11 @@ header
 							padding: rem(17) rem(20)
 							border-radius: 5px
 							margin-bottom: rem(10)
+							&.active
+								background-color: #7BCCF0
+								.title
+									.x-link
+										color: #FFFFFF
 							.title
 								font-weight: bold
 								margin: 0
@@ -1511,7 +1529,7 @@ header
 									display: flex
 									&:before
 										content: "-"
-										color: $accent
+										color: #FFFFFF
 										font-weight: bold
 										width: rem(20)
 										height: rem(20)
@@ -1519,6 +1537,7 @@ header
 										font-size: rem(18)
 									&.collapsed:before
 										content: "+"
+										color: $accent
 									&:hover
 										text-decoration: none
 						.collapse
@@ -1534,7 +1553,7 @@ header
 					border: rem(5) solid #D7EFFA
 					border-radius: 5px
 					background-color: #FFFFFF
-					padding: rem(30)
+					padding: rem(10)
 					.faq-title
 						font-family: $h-font
 						font-weight: bold
@@ -1568,15 +1587,19 @@ header
 
 .footer
 	background-color: $accent
-	padding: rem(40) 0 rem(30)
+	padding-top: rem(20)
+	padding-bottom: rem(20)
 	.container
 		.row
 			.footer-logo
+				img
+					margin: 0 auto
 			.footer-contacts, .footer-time, .footer-social, .footer-consultation
 				color: #FFFFFF
 				.f-title
 					font-size: rem(18)
 					line-height: rem(21)
+					text-align: center
 				.cont-box
 					.cont-item
 						display: flex
@@ -1590,9 +1613,20 @@ header
 							margin-bottom: rem(13)
 						a
 							color: #FFFFFF
+							&:hover
+								text-decoration: none
+			.footer-contacts
+				padding: 0 rem(40)
+			.footer-time
+				.cont-box
+					display: flex
+					flex-direction: column
+					align-items: center
+					text-align: center
 			.footer-social
 				.f-soc-box
 					display: flex
+					justify-content: center
 					.soc-item
 						margin-right: rem(10)
 						&:last-child
