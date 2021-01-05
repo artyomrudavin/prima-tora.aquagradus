@@ -315,6 +315,9 @@ $(function() {
 
 	$("#header-call-form, #form-header-form, #akciya-form, #book-form, #faq-form-container, #primaTwen-form, #primaThird-form, #primaFift-form, #primaColona-form, #kubTwen-form, #kubThird-form, #kubFift-form, #adds-nasadka-form, #adds-regulyator-form, #adds-ten-form, #adds-mufta-form, #adds-deflegmator-form, #adds-jioptr-form, #adds-popugai-form, #adds-areometri-form, #footer-call-form").submit(function() { //Change
 		var th = $(this);
+		var submitButton = th.find("button[type='submit']");
+		console.log(submitButton);
+		submitButton.addClass('btn-disable').prop("disabled", true);
 
 		$.ajax({
 			type: "POST",
@@ -324,9 +327,9 @@ $(function() {
 			// alert("Thank you!");
 			setTimeout(function() {
 				// Done Functions
-				th.trigger("reset");
+				location.href = "https://prima-tora.com.ua/sps";
+				// th.trigger("reset");
 			}, 500);
-			location.href = "https://prima-tora.com.ua/sps";
 		});
 		return false;
 	});
